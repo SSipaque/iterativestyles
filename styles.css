@@ -8,26 +8,34 @@
 			font-size: 1.5em;
 		}
 
+        body {
+            height: 150vh;
+        }
+
 		.editor {
 			display: grid;
-  			grid-template-columns: 1fr 0fr 2fr 2fr;
+  			/* grid-template-columns: 1fr 0fr 2fr 2fr; */
 			background-color: var(--off-white);
 			border-style: solid;
 			border-width: 1px;
 			border-color: var(--dark-blue);
 			height: fit-content;
-			/* max-width: 60vw; */
-			padding: 0em 1em 1em 1em;
-/* 			overflow: visible; */        
-            align-items: center;
+			max-width: 90vw;
+			padding: 0em 0em 1em 1em;
+            margin: auto;
+            column-gap: 1rem;
+/* 			overflow: visible; */    
+            /* align-items: center; */
 			overflow: hidden;
 		}
 		.colors {
 			display: grid; 
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 6rem 6rem;
             justify-items: center;
-            padding-bottom: 2rem;
-            padding-right: 1rem;
+            padding: 0rem 1rem 1rem 0rem;
+            column-gap: 1rem;
+            width: 12rem;
+            height: 25rem;
 		}
 		#color1{
 			background-color: #EBEBEB;
@@ -164,16 +172,20 @@
 		}
 		.h1f1 {
 			font-family:'Caudex', serif;
+            font-size: 4rem;
 			/* margin-bottom: -2rem; */
 		}
 		.h3f1 {
 			font-family:'Caudex', serif;
+            font-size: 1.8rem;
 		}
 		.h5f1 {
 			font-family:'Caudex', serif;
+            font-size: 1.4rem;
 		}
 		.smallest-font1 {
 			font-family:'Caudex', serif;
+            font-size: 1rem;
 		}
 		#font2 {
 			font-family: 'Montserrat', sans-serif;
@@ -182,16 +194,20 @@
 		}
 		.h1f2 {
 			font-family: 'Montserrat', sans-serif; 
+            font-size: 4rem;
 			/* margin-bottom: -2rem; */
 		}
 		.h3f2 {
 			font-family: 'Montserrat', sans-serif; 
+            font-size: 1.8rem;
 		}
 		.h5f2 {
 			font-family: 'Montserrat', sans-serif; 
+            font-size: 1.4rem;
 		}
 		.smallest-font2 {
 			font-family:'Montserrat', sans-serif;
+            font-size: 1rem;
 		}
 		#input-font2{
 			display: none;
