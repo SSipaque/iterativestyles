@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IterativeStyles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Caudex&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="editor">
+		<div class="colors">
+			<div id="color1" onclick="toggleDisplay1();">
+				<input type="color" id="color1value"
+           value="#EBEBEB">
+			</div>
+			<div id="color2" onclick="toggleDisplay2();">
+				<input type="color" id="color2value"
+           value="#C6CACC">
+			</div>
+			<div id="color3" onclick="toggleDisplay3();">
+				<input type="color" id="color3value"
+           value="#BBB8D1">
+			</div>
+			<div id="color4" onclick="toggleDisplay4();">
+				<input type="color" id="color4value"
+           value="#798276">
+			</div>
+			<div id="color5" onclick="toggleDisplay5();">
+				<input type="color" id="color5value"
+           value="#B0BAAD">
+			</div>
+			<div id="color6" onclick="toggleDisplay6();">
+				<input type="color" id="color6value"
+           value="#292546">
+			</div>
+		</div>
+		<div id="font1">
+			<h1 class="h1f1">Font 1</h1>
+			<h3 class="h3f1">How quickly daft jumping zebras vex.</h3>
+			<h5 class="h5f1">The quick brown fox jumps over a lazy dog.</h5>
+			<p class="smallest-font1">The five boxing wizards jump quickly</p>
+		</div>
+		<div id="font2">
+			<h1 class="h1f2">Font 2</h1>
+			<h3 class="h3f2">How quickly daft jumping zebras vex.</h3>
+			<h5 class="h5f2">The quick brown fox jumps over a lazy dog.</h5>
+			<p class="smallest-font2">The five boxing wizards jump quickly</p>
+		</div>
+		<select id="input-font2" class="input" onchange="changeFontStyle2(this);">
+			<option value="Montserrat" selected="selected">Montserrat</option>
+			<option value="Arial">Arial</option>
+			<option value="Helvetica">Helvetica</option>
+			<option value="Impact">Impact</option>
+			<option value="Caudex">Caudex</option>
+			<option value="Times New Roman">Times New Roman</option>
+			<option value="Courier New">Courier New</option>
+			<option value="EB Garamond">EB Garamond</option>
+		</select>
+	</div>
+	<script>
+		var c1v= document.getElementById("color1value");
+		var c2v= document.getElementById("color2value");
+		var c3v= document.getElementById("color3value");
+		var c4v= document.getElementById("color4value");
+		var c5v= document.getElementById("color5value");
+		var c6v= document.getElementById("color6value");
+		function toggleDisplay1(){
+// 			var c1v= document.getElementById("color1value");
+			if (c1v.style.display === "block") {
+// 				setTimeout(function() {
+// 				  c1v.style.display = "none";
+// 				}, 5000);
+				c1v.style.display = "none";
+		  	} else {
+				c1v.style.display = "block";
+		 	 
+// 		 	 console.log(c1v.style.display);
+			}
+			}
+			const c1 = document.getElementById("color1");
+			c1v.addEventListener("input", updateColor);
+
+		function toggleDisplay2() {
+			if (c2v.style.display === "block") {
+				c2v.style.display = "none";
+		  	} else {
+				c2v.style.display = "block";
+			};
+			const c2 = document.getElementById("color2");
+			c2v.addEventListener("input", updateColor2);
+		}
+		function toggleDisplay3() {
+			if (c3v.style.display === "block") {
+				c3v.style.display = "none";
+		  	} else {
+				c3v.style.display = "block";
+			};
+			const c3 = document.getElementById("color3");
+			c3v.addEventListener("input", updateColor3);
+		}
+		function toggleDisplay4() {
+			if (c4v.style.display === "block") {
+				c4v.style.display = "none";
+		  	} else {
+				c4v.style.display = "block";
+			};
+			const c4 = document.getElementById("color4");
+			c4v.addEventListener("input", updateColor4);
+		}
+		function toggleDisplay5() {
+			if (c5v.style.display === "block") {
+				c5v.style.display = "none";
+		  	} else {
+				c5v.style.display = "block";
+			};
+			const c5 = document.getElementById("color5");
+			c5v.addEventListener("input", updateColor5);
+		}
+		function toggleDisplay6() {
+			if (c6v.style.display === "block") {
+				c6v.style.display = "none";
+		  	} else {
+				c6v.style.display = "block";
+			};
+			const c6 = document.getElementById("color6");
+			c6v.addEventListener("input", updateColor6);
+		}
+		
+		function updateColor(){
+			c1.style.backgroundColor = document.getElementById("color1value").value;
+			document.getElementById("container-d").style.backgroundColor = document.getElementById("color1value").value;
+			document.getElementById("container-m").style.backgroundColor = document.getElementById("color1value").value;
+// 			console.log(document.getElementById("container-d").style.backgroundColor); 
+// 			c2.style.backgroundColor = document.getElementById("color2value").value;
+// 			console.log(c2.style.backgroundColor); 
+		}
+		function updateColor2(){
+			const c2 = document.getElementById("color2");
+			c2.style.backgroundColor = document.getElementById("color2value").value;
+		
+			document.getElementById("strip-d").style.backgroundColor = document.getElementById("color2value").value;
+			document.getElementById("strip-m").style.backgroundColor = document.getElementById("color2value").value;
+// 			console.log(document.getElementById("strip-m").style.backgroundColor);
+// 			console.log(c2.style.backgroundColor); 
+		}
+		function updateColor3(){
+			const c3 = document.getElementById("color3");
+			c3.style.backgroundColor = document.getElementById("color3value").value;
+
+			document.getElementById("header-d").style.backgroundColor = document.getElementById("color3value").value;
+			document.getElementById("footer-d").style.backgroundColor = document.getElementById("color3value").value;
+			document.getElementById("header-m").style.backgroundColor = document.getElementById("color3value").value;
+			document.getElementById("footer-m").style.backgroundColor = document.getElementById("color3value").value;
+// 			console.log(c3.style.backgroundColor); 
+// 			console.log(document.getElementById("header-d").style.backgroundColor); 
+		}
+		function updateColor4(){
+			const c4 = document.getElementById("color4");
+			c4.style.backgroundColor = document.getElementById("color4value").value;
+		}
+		function updateColor5(){
+			const c5 = document.getElementById("color5");
+			c5.style.backgroundColor = document.getElementById("color5value").value;
+		}
+		function updateColor6(){
+			const c6 = document.getElementById("color6");
+			c6.style.backgroundColor = document.getElementById("color6value").value;
+			//This part below does not work properly at the moment
+			document.getElementById("btn01").style.backgroundColor = document.getElementById("color6value").value;
+			document.getElementById("btn01-m").style.backgroundColor = document.getElementById("color6value").value;
+// 			console.log(document.getElementById("btn01-m").style.backgroundColor);
+		}
+
+	  //This may be a problem as a result of WordPress
+	  function changeFontStyle2(selectTag) {
+		  var listValue = selectTag.options[selectTag.selectedIndex].text;
+		  document.getElementById("font2").style.fontFamily = document.getElementById("input-font2").value;
+// 		  console.log(font2.style.fontFamily);
+	  }
+		
+		
+// 		function changeColor(){
+// 			var c1 = document.getElementById("color1");
+// 			c1.style.backgroundColor = document.getElementById("color1value").value;
+// 			 console.log(c1.style.backgroundColor);
+//         }
+	
+	</script>
+</body>
+</html>
