@@ -1,207 +1,261 @@
-	:root {
-        /* font-size: 100%; */
-        --off-white: #f8fdff;
-        --dark-blue: #292546;
+:root {
+    /* Color Variables */
+    --off-white: #f8fdff;
+    --dark-blue: #292546;
+    --pale-purple: #BBB8D1;
+    --dark-green: #798276;
+    --pale-green: #B0BAAD;
+    --light-gray: #EBEBEB;
+    --mid-gray: #C6CACC;
+}
+.site-title {
+    font-family: 'Caudex', serif;
+    font-size: 1.5em;
+}
+
+body {
+    background-color: var(--light-gray);
+    height: fit-content;
+}
+
+.editor {
+    display: grid;
+    /* grid-template-columns: 1fr 0fr 2fr 2fr; */
+    background-color: var(--off-white);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--dark-blue);
+    height: fit-content;
+    max-width: 90vw;
+    padding: 0em 0em 1em 1em;
+    margin: auto;
+    margin-bottom: 2rem;
+    column-gap: 1rem;
+    /* 			overflow: visible; */    
+    /* align-items: center; */
+    overflow: hidden;
+}
+.colors {
+    display: grid; 
+    grid-template-columns: 6rem 6rem;
+    justify-items: center;
+    padding: 0rem 1rem 1rem 0rem;
+    column-gap: 1rem;
+    width: 12rem;
+    height: 25rem;
+}
+#color1{
+    background-color: var(--light-gray);
+    width: 6em;
+    height: 6em;
+    /* margin-left: -13em; */
+    /* margin-left: -9.5em; */
+    margin-top: 2em;
+    border-radius: 50%;
+    grid-column: 1/2;
+    grid-row: 1/auto;
+}
+#color1:hover {
+    width: 7em;
+    height: 7em;
+    cursor: pointer;
+}
+#color1value {
+    display: none;
+    position: absolute;
+    width: 2rem;
+    height: 2rem; 
+    /* border-radius: 50%; */
+}
+#color2{
+    background-color: var(--mid-gray);
+    width: 6em;
+    height: 6em;
+    /* margin-left: -7em; */
+    margin-top: 2em;
+    border-radius: 50%;
+    grid-column: 2/auto;
+    grid-row: 1/auto;
+}
+#color2:hover {
+    width: 7em;
+    height: 7em;
+    cursor: pointer;
+}
+#color2value {
+    display: none;
+    position: absolute;
+    width: 2rem;
+    height: 2rem; 
+}
+#color3{
+    background-color: var(--pale-purple);
+    width: 6em;
+    height: 6em;
+    /* margin-left: -13em; */
+    margin-top: 10.5em;
+    border-radius: 50%;
+    grid-column: 1/auto;
+    grid-row: 1/auto;
+}
+#color3:hover {
+    width: 7em;
+    height: 7em;
+    cursor: pointer;
+}
+#color3value {
+    display: none;
+    position: absolute;
+    width: 2rem;
+    height: 2rem; 
+}
+#color4{
+    background-color: var(--dark-green);
+    width: 6em;
+    height: 6em;
+    /* margin-left: -7em; */
+    margin-top: 10.5em;
+    border-radius: 50%;
+    grid-column: 2/auto;
+    grid-row: 1/auto;
+}
+#color4:hover {
+    width: 7em;
+    height: 7em;
+    cursor: pointer;
+}
+#color4value {
+    display: none;
+    position: absolute;
+    width: 2rem;
+    height: 2rem; 
+}
+#color5{
+    background-color: var(--pale-green);
+    width: 6em;
+    height: 6em;
+    /* margin-left: -13em; */
+    margin-top: 19em;
+    border-radius: 50%;
+    grid-column: 1/auto;
+    grid-row: 1/auto;
+}
+#color5:hover {
+    width: 7em;
+    height: 7em;
+    cursor: pointer;
+}
+#color5value {
+    display: none;
+    position: absolute;
+    width: 2rem;
+    height: 2rem; 
+}
+#color6{
+    background-color: var(--dark-blue);
+    width: 6em;
+    height: 6em;
+    /* margin-left: -7em; */
+    margin-top: 19em;
+    border-radius: 50%;
+    grid-column: 2/auto;
+    grid-row: 1/auto;
+}
+#color6:hover {
+    width: 7em;
+    height: 7em;
+    cursor: pointer;
+}
+#color6value {
+    display: none;
+    position: absolute;
+    width: 2rem;
+    height: 2rem; 
+}
+#font1 {
+    font-family:'Caudex', serif;
+    grid-column: 3/auto;
+    grid-row: 1/auto;
+}
+.h1f1 {
+    font-size: 4rem;
+}
+.h3f1 {
+    font-size: 1.8rem;
+}
+.h5f1 {
+    font-size: 1.4rem;
+}
+.smallest-font1 {
+    font-size: 1rem;
+}
+#font2 {
+    font-family: 'Montserrat', sans-serif;
+    grid-column: 4/auto;
+    grid-row: 1/auto;
+    padding-left: 2rem;
+}
+.h1f2 {
+    font-size: 4rem;
+}
+.h3f2 {
+    font-size: 1.8rem;
+}
+.h5f2 {
+    font-size: 1.4rem;
+}
+.smallest-font2 {
+    font-size: 1rem;
+}
+#input-font2{
+    display: none; /* This now works, but needs to be changed to appear when Font 2 
+    is clicked on */
     }
-		.site-title {
-			font-family: 'Caudex', serif;
-			font-size: 1.5em;
-		}
+    /*#color1:hover #dropdown-content {display:block;}*/
 
-        body {
-            height: 150vh;
-        }
+/* Tab styling */
+/* Style the tab */
+.tab {
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #f1f1f1; */
+    overflow: hidden;
+    border: none;
+    max-width: 91.2vw;
+    margin: auto;
+}
 
-		.editor {
-			display: grid;
-  			/* grid-template-columns: 1fr 0fr 2fr 2fr; */
-			background-color: var(--off-white);
-			border-style: solid;
-			border-width: 1px;
-			border-color: var(--dark-blue);
-			height: fit-content;
-			max-width: 90vw;
-			padding: 0em 0em 1em 1em;
-            margin: auto;
-            column-gap: 1rem;
-/* 			overflow: visible; */    
-            /* align-items: center; */
-			overflow: hidden;
-		}
-		.colors {
-			display: grid; 
-			grid-template-columns: 6rem 6rem;
-            justify-items: center;
-            padding: 0rem 1rem 1rem 0rem;
-            column-gap: 1rem;
-            width: 12rem;
-            height: 25rem;
-		}
-		#color1{
-			background-color: #EBEBEB;
-			width: 6em;
-			height: 6em;
-			/* margin-left: -13em; */
-            /* margin-left: -9.5em; */
-			margin-top: 2em;
-			border-radius: 50%;
-			grid-column: 1/2;
-			grid-row: 1/auto;
-		}
-		#color1:hover {
-			width: 7em;
-			height: 7em;
-			cursor: pointer;
-		}
-		#color1value {
-		    display: none;
-			position: absolute;
-			width: 2rem;
-			height: 2rem; 
-			/* border-radius: 50%; */
-		 }
-		#color2{
-			background-color: #C6CACC;
-			width: 6em;
-			height: 6em;
-			/* margin-left: -7em; */
-			margin-top: 2em;
-			border-radius: 50%;
-			grid-column: 2/auto;
-			grid-row: 1/auto;
-		}
-		#color2:hover {
-			width: 7em;
-			height: 7em;
-			cursor: pointer;
-		}
-		#color2value {
-		    display: none;
-			position: absolute;
-			width: 2rem;
-			height: 2rem; 
-		 }
-		#color3{
-			background-color: #BBB8D1;
-			width: 6em;
-			height: 6em;
-			/* margin-left: -13em; */
-            margin-top: 10.5em;
-			border-radius: 50%;
-			grid-column: 1/auto;
-			grid-row: 1/auto;
-		}
-		#color3:hover {
-			width: 7em;
-			height: 7em;
-			cursor: pointer;
-		}
-		#color3value {
-		    display: none;
-			position: absolute;
-			width: 2rem;
-			height: 2rem; 
-		 }
-		#color4{
-			background-color: #798276;
-			width: 6em;
-			height: 6em;
-			/* margin-left: -7em; */
-            margin-top: 10.5em;
-			border-radius: 50%;
-			grid-column: 2/auto;
-			grid-row: 1/auto;
-		}
-		#color4:hover {
-			width: 7em;
-			height: 7em;
-			cursor: pointer;
-		}
-		#color4value {
-		    display: none;
-			position: absolute;
-			width: 2rem;
-			height: 2rem; 
-		 }
-		#color5{
-			background-color: #B0BAAD;
-			width: 6em;
-			height: 6em;
-			/* margin-left: -13em; */
-			margin-top: 19em;
-			border-radius: 50%;
-			grid-column: 1/auto;
-			grid-row: 1/auto;
-		}
-		#color5:hover {
-			width: 7em;
-			height: 7em;
-			cursor: pointer;
-		}
-		#color5value {
-		    display: none;
-			position: absolute;
-			width: 2rem;
-			height: 2rem; 
-		 }
-		#color6{
-			background-color: #292546;
-			width: 6em;
-			height: 6em;
-			/* margin-left: -7em; */
-			margin-top: 19em;
-			border-radius: 50%;
-			grid-column: 2/auto;
-			grid-row: 1/auto;
-		}
-		#color6:hover {
-			width: 7em;
-			height: 7em;
-			cursor: pointer;
-		}
-		#color6value {
-		    display: none;
-			position: absolute;
-			width: 2rem;
-			height: 2rem; 
-		 }
-		#font1 {
-			font-family:'Caudex', serif;
-			grid-column: 3/auto;
-    		grid-row: 1/auto;
-		}
-		.h1f1 {
-            font-size: 4rem;
-		}
-		.h3f1 {
-            font-size: 1.8rem;
-		}
-		.h5f1 {
-            font-size: 1.4rem;
-		}
-		.smallest-font1 {
-            font-size: 1rem;
-		}
-		#font2 {
-			font-family: 'Montserrat', sans-serif;
-			grid-column: 4/auto;
-    		grid-row: 1/auto;
-            padding-left: 2rem;
-		}
-		.h1f2 {
-            font-size: 4rem;
-		}
-		.h3f2 {
-            font-size: 1.8rem;
-		}
-		.h5f2 {
-            font-size: 1.4rem;
-		}
-		.smallest-font2 {
-            font-size: 1rem;
-		}
-		#input-font2{
-			display: none; /* This now works, but needs to be changed to appear when Font 2 
-            is clicked on */
-		}
-		/*#color1:hover #dropdown-content {display:block;}*/
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    color: var(--dark-green);
+    float: left;
+    border: 1px solid var(--dark-blue);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 1.2rem;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: var(--mid-gray);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: var(--off-white);
+    border: 1px solid var(--dark-blue);
+    border-bottom: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    background-color: var(--off-white);
+    max-width: 89.4vw;
+    padding: 6px 12px;
+    border: 1px solid var(--dark-blue);
+    border-top: 1px solid var(--dark-blue);
+    margin: auto;
+}

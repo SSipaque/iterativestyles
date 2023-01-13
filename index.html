@@ -71,22 +71,22 @@
 <!-- This is where the tabs start -->
     <div class="tab">
     <!-- These functions still have to be added as well as the code for each template -->
-    <button class="tablinks" onclick="openTemplate(event, 'Homepage Template')" id="defaultOpen">Homepage</button>
-    <button class="tablinks" onclick="openTemplate(event, 'Contact Page Template')">Contact</button>
-    <button class="tablinks" onclick="openTemplate(event, 'Article Template')">Article</button>
+    <button class="tablinks" onclick="openTemplate(event, 'Homepage')" id="defaultOpen">Homepage</button>
+    <button class="tablinks" onclick="openTemplate(event, 'Contact_page')">Contact</button>
+    <button class="tablinks" onclick="openTemplate(event, 'Article')">Article</button>
     </div>
 
-    <div id="homepage" class="tabcontent">
+    <div id="Homepage" class="tabcontent">
     <h3>Homepage Template Placeholder</h3>
     <p>This template will be added later.</p>
     </div>
 
-    <div id="contact_page" class="tabcontent">
+    <div id="Contact_page" class="tabcontent">
     <h3>Contact Template Placeholder</h3>
     <p>This template will be added later.</p> 
     </div>
 
-    <div id="article" class="tabcontent">
+    <div id="Article" class="tabcontent">
     <h3>Article Template Placeholder</h3>
     <p>This template will be added later.</p>
     </div>
@@ -216,6 +216,24 @@
 // 			c1.style.backgroundColor = document.getElementById("color1value").value;
 // 			 console.log(c1.style.backgroundColor);
 //         }
+
+// Functions for tabs
+function openTemplate(evt, templateName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(templateName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 	
 	</script>
 </body>
