@@ -23,10 +23,18 @@ a:link {
 #site-title {
     color:  var(--dark-blue);
     font-size: 2.5rem;
+    font-weight: 400;
     text-align: center;
 }
 #site-title:hover {
     color: var(--dark-green);
+}
+
+#short-info {
+    color: var(--dark-blue);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
 }
 
 .editor {
@@ -225,16 +233,13 @@ a:link {
     /*#color1:hover #dropdown-content {display:block;}*/
 
 /* Tab styling */
-/* Style the tab */
 .tab {
     font-family: 'Montserrat', sans-serif;
-    /* background-color: #f1f1f1; */
     overflow: hidden;
     border: none;
     max-width: 91.2vw;
     margin: auto;
 }
-
 /* Style the buttons inside the tab */
 .tab button {
     background-color: inherit;
