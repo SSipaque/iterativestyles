@@ -15,7 +15,12 @@
 
 <body>
     <a href="/index.html"><h1 id="site-title">IterativeStyles</h1></a>
-    <h3 id="short-info">Try different color and font combinations to find out what works best for your brand!</h3>
+	<nav>
+		<ul>
+			<li><a id="home-nav" href="/index.html">Home</a></li>
+		</ul>
+	</nav>
+    <h3 id="short-info">Try different color and font combinations to find out what works best for you!</h3>
 	<div class="editor">
 		<div class="colors">
 			<div id="color1" onclick="toggleDisplay1();">
@@ -68,26 +73,31 @@
     </div>
 <!-- This is where the tabs start -->
     <div class="tab">
-    <!-- These functions still have to be added as well as the code for each template -->
-    <button class="tablinks" onclick="openTemplate(event, 'Homepage')" id="defaultOpen">Homepage</button>
-    <button class="tablinks" onclick="openTemplate(event, 'Contact_page')">Contact</button>
-    <button class="tablinks" onclick="openTemplate(event, 'Article')">Article</button>
+    <!-- The code for each template needs to be added -->
+		<button class="tablinks" onclick="openTemplate(event, 'Homepage')" id="defaultOpen">Homepage</button>
+		<button class="tablinks" onclick="openTemplate(event, 'Contact_page')">Contact</button>
+		<button class="tablinks" onclick="openTemplate(event, 'Article')">Article</button>
     </div>
 
-    <div id="Homepage" class="tabcontent">
-    <h3>Homepage Template Placeholder</h3>
-    <p>This template will be added later.</p>
-    </div>
+	<div id="Homepage" class="tabcontent">
+		<h3>Homepage Template Placeholder</h3>
+		<p>This template will be added later.</p>
+	</div>
 
     <div id="Contact_page" class="tabcontent">
-    <h3>Contact Template Placeholder</h3>
-    <p>This template will be added later.</p> 
+		<h3>Contact Template Placeholder</h3>
+		<p>This template will be added later.</p> 
     </div>
 
     <div id="Article" class="tabcontent">
-    <h3>Article Template Placeholder</h3>
-    <p>This template will be added later.</p>
+		<h3>Article Template Placeholder</h3>
+		<p>This template will be added later.</p>
     </div>
+
+	<div id="footer">
+		<a id="linkedin-link" href="https://www.linkedin.com/in/stephannie-sipaque/" target="_blank"><img id="linkedin-icon" src="assets/linkedin.svg" alt="linkedIn icon with link"></a>
+		<a id="github-link" href="https://github.com/SSipaque" target="_blank"><img id="linkedin-icon" src="assets/github.svg" alt="Github icon with link"></a>
+	</div>
 	<script>
 		var c1v= document.getElementById("color1value");
 		var c2v= document.getElementById("color2value");
