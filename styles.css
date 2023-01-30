@@ -225,6 +225,11 @@ a:link {
 .smallest-font1 {
     font-size: 1rem;
 }
+
+#input-font1{
+    display: none; 
+}
+
 #font2 {
     font-family: 'Montserrat', sans-serif;
     grid-column: 4/auto;
@@ -243,12 +248,11 @@ a:link {
 .smallest-font2 {
     font-size: 1rem;
 }
-#input-font2{
-    display: none; /* This now works, but needs to be changed to appear when Font 2 
-    is clicked on */
-    }
-    /*#color1:hover #dropdown-content {display:block;}*/
 
+/* This now works, but needs to be changed to appear when Font 2 is clicked on */
+#input-font2{
+    display: none; 
+}
 /* Tab styling */
 .tab {
     font-family: 'Montserrat', sans-serif;
