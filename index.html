@@ -49,39 +49,42 @@
 			</div>
 		</div>
 		<div id="font1">
-			<h1 class="h1f1">Font 1</h1>
+			<!-- Font 1 font-family drop-down menu -->
+			<select id="input-font1" class="input" onchange="changeFontStyle1(this); changeFontText1();">
+				<option value="Montserrat">Montserrat</option>
+				<option value="Arial">Arial</option>
+				<option value="Helvetica">Helvetica</option>
+				<option value="Impact">Impact</option>
+				<option value="Caudex" selected="selected">Caudex</option>
+				<option value="Times New Roman">Times New Roman</option>
+				<option value="Courier New">Courier New</option>
+				<option value="EB Garamond">EB Garamond</option>
+			</select>
+			<h1 id="h1f1">Font 1</h1>
 			<h3 class="h3f1">How quickly daft jumping zebras vex.</h3>
 			<h5 class="h5f1">The quick brown fox jumps over a lazy dog.</h5>
 			<p class="smallest-font1">The five boxing wizards jump quickly</p>
 		</div>
-		<!-- Font 1 font-family drop-down menu -->
-		<select id="input-font1" class="input" onchange="changeFontStyle1(this);">
-			<option value="Montserrat">Montserrat</option>
-			<option value="Arial">Arial</option>
-			<option value="Helvetica">Helvetica</option>
-			<option value="Impact">Impact</option>
-			<option value="Caudex" selected="selected">Caudex</option>
-			<option value="Times New Roman">Times New Roman</option>
-			<option value="Courier New">Courier New</option>
-			<option value="EB Garamond">EB Garamond</option>
-		</select>
+		
 		<div id="font2">
-			<h1 class="h1f2">Font 2</h1>
+			<!-- Font 2 font-family drop-down menu -->
+			<select id="input-font2" class="input" onchange="changeFontStyle2(this); changeFontText2();">
+				<option value="Montserrat" selected="selected">Montserrat</option>
+				<option value="Arial">Arial</option>
+				<option value="Helvetica">Helvetica</option>
+				<option value="Impact">Impact</option>
+				<option value="Caudex">Caudex</option>
+				<option value="Times New Roman">Times New Roman</option>
+				<option value="Courier New">Courier New</option>
+				<option value="EB Garamond">EB Garamond</option>
+			</select>
+			<!-- Font 2 text examples -->
+			<h1 id="h1f2">Font 2</h1>
 			<h3 class="h3f2">How quickly daft jumping zebras vex.</h3>
 			<h5 class="h5f2">The quick brown fox jumps over a lazy dog.</h5>
 			<p class="smallest-font2">The five boxing wizards jump quickly</p>
 		</div>
-		<!-- Font 2 font-family drop-down menu -->
-		<select id="input-font2" class="input" onchange="changeFontStyle2(this);">
-			<option value="Montserrat" selected="selected">Montserrat</option>
-			<option value="Arial">Arial</option>
-			<option value="Helvetica">Helvetica</option>
-			<option value="Impact">Impact</option>
-			<option value="Caudex">Caudex</option>
-			<option value="Times New Roman">Times New Roman</option>
-			<option value="Courier New">Courier New</option>
-			<option value="EB Garamond">EB Garamond</option>
-		</select>
+		
     </div>
 <!-- This is where the tabs start -->
     <div class="tab">
@@ -239,15 +242,20 @@
 	//   }
 		
 		var changeFontStyle1 = function (font) {
-            document.getElementById(
-                "font1").style.fontFamily
-                        = font.value;
+            document.getElementById("font1").style.fontFamily = font.value;
         }
+		var changeFontText1 = function() {
+			const input1 = document.getElementById("input-font1");
+			document.getElementById('h1f1').innerHTML = input1.value;
+		}
+
 		var changeFontStyle2 = function (font) {
-            document.getElementById(
-                "font2").style.fontFamily
-                        = font.value;
+            document.getElementById("font2").style.fontFamily = font.value;
         }
+		var changeFontText2 = function() {
+			const input2 = document.getElementById("input-font2");
+			document.getElementById('h1f2').innerHTML = input2.value;
+		}
 
 // Functions for tabs
 function openTemplate(evt, templateName) {

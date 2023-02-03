@@ -213,7 +213,7 @@ a:link {
     grid-column: 3/auto;
     grid-row: 1/auto;
 }
-.h1f1 {
+#h1f1 {
     font-size: 4rem;
 }
 .h3f1 {
@@ -228,9 +228,11 @@ a:link {
 
 /* This now works, but needs to be changed to appear when Font 1 is clicked on 
     also the placement is strange */
-/* #input-font1{
-    /* display: none; 
-} */
+#input-font1{
+    /* display: none; */
+    position: absolute;
+    margin-top: 2rem;
+} 
 
 #font2 {
     font-family: 'Montserrat', sans-serif;
@@ -238,7 +240,7 @@ a:link {
     grid-row: 1/auto;
     padding-left: 2rem;
 }
-.h1f2 {
+#h1f2 {
     font-size: 4rem;
 }
 .h3f2 {
@@ -253,9 +255,11 @@ a:link {
 
 /* This now works, but needs to be changed to appear when Font 2 is clicked on 
     also the placement is strange */
-/* #input-font2{
-    /* display: none;  
-} */
+#input-font2 {
+    /* display: none; */ 
+    position: absolute;
+    margin-top: 2rem;
+}
 
 /* Tab styling */
 .tab {
