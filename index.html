@@ -60,7 +60,7 @@
 				<option value="Courier New">Courier New</option>
 				<option value="EB Garamond">EB Garamond</option>
 			</select>
-			<h1 id="h1f1">Font 1</h1>
+			<h1 id="h1f1">Caudex</h1>
 			<h3 class="h3f1">How quickly daft jumping zebras vex.</h3>
 			<h5 class="h5f1">The quick brown fox jumps over a lazy dog.</h5>
 			<p class="smallest-font1">The five boxing wizards jump quickly</p>
@@ -79,7 +79,7 @@
 				<option value="EB Garamond">EB Garamond</option>
 			</select>
 			<!-- Font 2 text examples -->
-			<h1 id="h1f2">Font 2</h1>
+			<h1 id="h1f2">Montserrat</h1>
 			<h3 class="h3f2">How quickly daft jumping zebras vex.</h3>
 			<h5 class="h5f2">The quick brown fox jumps over a lazy dog.</h5>
 			<p class="smallest-font2">The five boxing wizards jump quickly</p>
@@ -240,6 +240,14 @@
 	// 	var listValue = selectTag.options[selectTag.selectedIndex].text;
 	// 	document.getElementById("font2").style.fontFamily = document.getElementById("input-font2").value;
 	//   }
+		var infont1= document.getElementById("input-font1");
+		function toggleDisplayFont1() {
+			if (infont1.style.display === "block") {
+				infont1.style.display = "none";
+		  	} else {
+				infont1.style.display = "block";
+			};
+		}
 		
 		var changeFontStyle1 = function (font) {
             document.getElementById("font1").style.fontFamily = font.value;
