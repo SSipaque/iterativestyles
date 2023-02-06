@@ -216,6 +216,9 @@ a:link {
 #h1f1 {
     font-size: 4rem;
 }
+#h1f1:hover{
+    cursor: pointer;
+}
 .h3f1 {
     font-size: 1.8rem;
 }
@@ -229,7 +232,7 @@ a:link {
 /* This now works, but needs to be changed to appear when Font 1 is clicked on 
     also the placement is strange */
 #input-font1{
-    /* display: none; */
+    display: none;
     position: absolute;
     margin-top: 2rem;
 } 
@@ -242,6 +245,9 @@ a:link {
 }
 #h1f2 {
     font-size: 4rem;
+}
+#h1f2:hover{
+    cursor: pointer;
 }
 .h3f2 {
     font-size: 1.8rem;
@@ -256,7 +262,7 @@ a:link {
 /* This now works, but needs to be changed to appear when Font 2 is clicked on 
     also the placement is strange */
 #input-font2 {
-    /* display: none; */ 
+    display: none; 
     position: absolute;
     margin-top: 2rem;
 }

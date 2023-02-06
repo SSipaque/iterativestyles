@@ -60,7 +60,7 @@
 				<option value="Courier New">Courier New</option>
 				<option value="EB Garamond">EB Garamond</option>
 			</select>
-			<h1 id="h1f1">Caudex</h1>
+			<h1 id="h1f1" onclick="toggleDisplayFont1();">Caudex</h1>
 			<h3 class="h3f1">How quickly daft jumping zebras vex.</h3>
 			<h5 class="h5f1">The quick brown fox jumps over a lazy dog.</h5>
 			<p class="smallest-font1">The five boxing wizards jump quickly</p>
@@ -79,7 +79,7 @@
 				<option value="EB Garamond">EB Garamond</option>
 			</select>
 			<!-- Font 2 text examples -->
-			<h1 id="h1f2">Montserrat</h1>
+			<h1 id="h1f2" onclick="toggleDisplayFont2();">Montserrat</h1>
 			<h3 class="h3f2">How quickly daft jumping zebras vex.</h3>
 			<h5 class="h5f2">The quick brown fox jumps over a lazy dog.</h5>
 			<p class="smallest-font2">The five boxing wizards jump quickly</p>
@@ -227,26 +227,14 @@
 // 			console.log(document.getElementById("btn01-m").style.backgroundColor);
 		}
 
-		//Modify to work like color pickers but with font dropdown input
-	// 	if (c1v.style.display === "block") {
-	// 			c1v.style.display = "none";
-	// 	  	} else {
-	// 			c1v.style.display = "block";
-	// 		}
-			
-	// 		const c1 = document.getElementById("color1");
-	// 		c1v.addEventListener("input", updateColor);
-	//   function changeFontStyle2(selectTag) {
-	// 	var listValue = selectTag.options[selectTag.selectedIndex].text;
-	// 	document.getElementById("font2").style.fontFamily = document.getElementById("input-font2").value;
-	//   }
+
 		var infont1= document.getElementById("input-font1");
 		function toggleDisplayFont1() {
 			if (infont1.style.display === "block") {
 				infont1.style.display = "none";
 		  	} else {
 				infont1.style.display = "block";
-			};
+			}
 		}
 		
 		var changeFontStyle1 = function (font) {
@@ -257,6 +245,14 @@
 			document.getElementById('h1f1').innerHTML = input1.value;
 		}
 
+		var infont2= document.getElementById("input-font2");
+		function toggleDisplayFont2() {
+			if (infont2.style.display === "block") {
+				infont2.style.display = "none";
+		  	} else {
+				infont2.style.display = "block";
+			};
+		}
 		var changeFontStyle2 = function (font) {
             document.getElementById("font2").style.fontFamily = font.value;
         }
