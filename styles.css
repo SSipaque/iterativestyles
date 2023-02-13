@@ -508,6 +508,138 @@ figcaption {
     margin-top: 2vh; 
 }
 
+/* #Contact-page */
+/* Desktop contact page */
+#contact-page-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#desktop-container-contact-page {
+    /* background-color: #292546; */
+    width: 45rem;
+    height: 35.2rem;
+    margin: 1rem 0 2rem 0;
+    
+    overflow: hidden;
+}
+.container-cd{
+    background-color: #EBEBEB;
+    width: 50vw;
+    height: 39vw;
+}
+.header-cd {
+    background-color: #BBB8D1;
+    width: 50vw;
+    height: 5vh;
+}
+.site-title-cd {
+    margin-left: 3vw;
+}
+.nav-menu-cd {
+    text-align: right;
+    margin-top: -6.5vh;
+    margin-right: 3vw;
+}
+.body-cd {
+    width: 50vw;
+    height: fit-content;
+}
+.homepage-title-cd {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -0.2vh;
+}
+.strip-cd {
+    background-color: #C6CACC;
+    text-align: center;
+    width: 40vw;
+    height: 42vh;
+    margin-top: 4vh;
+    margin-left: 8vh;
+    padding: 0 4vw 0 4vw;
+}
+.strip-text01-cd {
+    font-size: 0.8em;
+}
+.btn01-cd {
+    background-color: #292546;
+    color: #F8FDFF;
+    font-size: 0.9em;
+    border-radius: 16px;
+}
+.btn01-cd:hover {
+    background-color: #BBB8D1;
+    color: #EBEBEB;
+}
+.footer-cd {
+    background-color: #BBB8D1;
+    width: 50vw;
+    height: 5vh;
+    margin-top: 20vh;
+}
+/* mobile contact page */
+#mobile-container-contact-page {
+    /* background-color: #292546; */
+    width: 25rem;
+    height: 35.2rem;
+    margin: 1rem 0 2rem 0;
+    
+    overflow: hidden;
+}
+.container-cm{
+    background-color: #EBEBEB;
+    width: 28vw;
+    height: 39vw;
+}
+.header-cm {
+    background-color: #BBB8D1;
+    width: 28vw;
+    height: 5vh;
+}
+.site-title-cm {
+    margin-left: 3vw;
+}
+.nav-menu-cm {
+    text-align: right;
+    margin-top: -6.5vh;
+    margin-right: 3vw;
+}
+.body-cm {
+    width: 28vw;
+    height: fit-content;
+}
+.homepage-title-cm {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -0.2vh;
+}
+.body-text01-cm {
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: -0.5vh;
+}
+.strip-cm {
+    background-color: #C6CACC;
+    text-align: center;
+    width: 28vw;
+    height: 40vh;
+    margin-top: 4vh;
+    margin-left: 0vh;
+    padding: 0 4vw 0 4vw;
+}
+.strip-text01-cm {
+    font-size: 0.8em;
+    margin-top: -1vh;
+    margin-bottom: 0.2vh;
+}
+.footer-cm {
+    background-color: #BBB8D1;
+    width: 28vw;
+    height: 5vh;
+    margin-top: 20vh;
+}
+
+
 #footer {
     background-color: var(--pale-green);
     width: 100vw;
