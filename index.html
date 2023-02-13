@@ -207,6 +207,8 @@
 		<a id="linkedin-link" href="https://www.linkedin.com/in/stephannie-sipaque/" target="_blank"><img id="linkedin-icon" src="assets/linkedin.svg" alt="linkedIn icon with link"></a>
 		<a id="github-link" href="https://github.com/SSipaque" target="_blank"><img id="linkedin-icon" src="assets/github.svg" alt="Github icon with link"></a>
 	</div>
+
+	<script src="tabs.js"></script>
 	<script>
 		var c1v= document.getElementById("color1value");
 		var c2v= document.getElementById("color2value");
@@ -275,23 +277,24 @@
 			const c6 = document.getElementById("color6");
 			c6v.addEventListener("input", updateColor6);
 		}
-		
+
+
 		function updateColor(){
 			c1.style.backgroundColor = document.getElementById("color1value").value;
 			document.getElementById("container-d").style.backgroundColor = document.getElementById("color1value").value;
 			document.getElementById("container-m").style.backgroundColor = document.getElementById("color1value").value;
-// 			console.log(document.getElementById("container-d").style.backgroundColor); 
-// 			c2.style.backgroundColor = document.getElementById("color2value").value;
-// 			console.log(c2.style.backgroundColor); 
+			// console.log(document.getElementById("container-d").style.backgroundColor); 
+			// c2.style.backgroundColor = document.getElementById("color2value").value;
+			// console.log(c2.style.backgroundColor); 
 		}
 		function updateColor2(){
 			const c2 = document.getElementById("color2");
 			c2.style.backgroundColor = document.getElementById("color2value").value;
-		
+
 			document.getElementById("strip-d").style.backgroundColor = document.getElementById("color2value").value;
 			document.getElementById("strip-m").style.backgroundColor = document.getElementById("color2value").value;
-// 			console.log(document.getElementById("strip-m").style.backgroundColor);
-// 			console.log(c2.style.backgroundColor); 
+			// console.log(document.getElementById("strip-m").style.backgroundColor);
+			// console.log(c2.style.backgroundColor); 
 		}
 		function updateColor3(){
 			const c3 = document.getElementById("color3");
@@ -301,8 +304,8 @@
 			document.getElementById("footer-d").style.backgroundColor = document.getElementById("color3value").value;
 			document.getElementById("header-m").style.backgroundColor = document.getElementById("color3value").value;
 			document.getElementById("footer-m").style.backgroundColor = document.getElementById("color3value").value;
-// 			console.log(c3.style.backgroundColor); 
-// 			console.log(document.getElementById("header-d").style.backgroundColor); 
+			// console.log(c3.style.backgroundColor); 
+			// console.log(document.getElementById("header-d").style.backgroundColor); 
 		}
 		function updateColor4(){
 			const c4 = document.getElementById("color4");
@@ -318,7 +321,7 @@
 			//This part below does not work properly at the moment
 			document.getElementById("btn01").style.backgroundColor = document.getElementById("color6value").value;
 			document.getElementById("btn01-m").style.backgroundColor = document.getElementById("color6value").value;
-// 			console.log(document.getElementById("btn01-m").style.backgroundColor);
+			// console.log(document.getElementById("btn01-m").style.backgroundColor);
 		}
 
 
@@ -356,24 +359,6 @@
 			document.getElementById('h1f2').innerHTML = input2.value;
 		}
 
-// Functions for tabs
-function openTemplate(evt, templateName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(templateName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-	
 	</script>
 </body>
 </html>
