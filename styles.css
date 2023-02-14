@@ -547,35 +547,25 @@ figcaption {
 .homepage-title-cd {
     text-align: center;
     font-size: 1.5em;
-    margin-top: -0.2vh;
+    margin-top: 1vh;
 }
 .strip-cd {
     background-color: #C6CACC;
     text-align: center;
-    width: 40vw;
-    height: 42vh;
+    width: 35vw;
+    height: 13rem;
     margin-top: 4vh;
-    margin-left: 8vh;
+    margin-left: 7vh;
     padding: 0 4vw 0 4vw;
 }
 .strip-text01-cd {
     font-size: 0.8em;
 }
-.btn01-cd {
-    background-color: #292546;
-    color: #F8FDFF;
-    font-size: 0.9em;
-    border-radius: 16px;
-}
-.btn01-cd:hover {
-    background-color: #BBB8D1;
-    color: #EBEBEB;
-}
 .footer-cd {
     background-color: #BBB8D1;
     width: 50vw;
-    height: 5vh;
-    margin-top: 20vh;
+    height: 8vh;
+    margin-top: 26vh;
 }
 /* mobile contact page */
 #mobile-container-contact-page {
@@ -621,7 +611,7 @@ figcaption {
 .strip-cm {
     background-color: #C6CACC;
     text-align: center;
-    width: 28vw;
+    width: 20vw;
     height: 40vh;
     margin-top: 4vh;
     margin-left: 0vh;
@@ -635,8 +625,8 @@ figcaption {
 .footer-cm {
     background-color: #BBB8D1;
     width: 28vw;
-    height: 5vh;
-    margin-top: 20vh;
+    height: 6vh;
+    margin-top: 16vh;
 }
 
 

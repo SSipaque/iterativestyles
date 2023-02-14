@@ -89,8 +89,8 @@
 <!-- This is where the tabs start -->
     <div class="tab">
     <!-- The code for each template needs to be added -->
-		<button class="tablinks" onclick="openTemplate(event, 'Homepage')" id="defaultOpen">Homepage</button>
-		<button class="tablinks" onclick="openTemplate(event, 'Contact_page')">Contact</button>
+		<button class="tablinks" onclick="openTemplate(event, 'Homepage')" >Homepage</button>
+		<button class="tablinks" onclick="openTemplate(event, 'Contact_page')" id="defaultOpen">Contact</button>
 		<button class="tablinks" onclick="openTemplate(event, 'Article')">Article</button>
     </div>
 
@@ -153,16 +153,19 @@
 						<p class="homepage-title-cd">Contact Me</p>
 					</div>
 					<div class="strip-cd">
-					<form action="">
+					<form action="" stye="font-family: 'Caudex', serif;">
 
-					<label for="name">Name</label>
-					<input type="text" id="name" name="name" placeholder="Your name..." style="margin-top:2vh;">
+					<label for="name" stye="font-family: 'Caudex', serif;">Name</label>
+					<input type="text" id="name" name="name" placeholder="Your name" style=" width:20.5rem; margin-top:2vh; font-family: 'Montserrat', sans-serif;">
 					<br>
-					<label for="subject">Subject</label>
-					<textarea id="subject" name="subject" placeholder="Write something..." style="height:200px; width:400px;"></textarea>
 
-					<input type="submit" value="Submit">
+					<label for="email" style="font-family: 'Caudex', serif;">Email</label>
+					<input type="email" id="email" name="email" placeholder="Your email" style=" width:20.5rem; margin-top:2vh; font-family: 'Montserrat', sans-serif;">
+					<br>
+					<label for="subject" style="font-family: 'Caudex', serif; float:left; margin-top: 2rem; margin-left: 3rem;">Subject</label>
+					<textarea id="subject" name="subject" placeholder="Write something..." style="height:50px; width: 24rem; margin-top: 1rem; margin-bottom: 1rem; font-family: 'Montserrat', sans-serif;"></textarea>
 
+					<input type="submit" value="Submit" style="font-family: 'Montserrat', sans-serif; float: right;">
 					</form>
 					</div>
 					<div class="footer-cd">	
@@ -182,10 +185,13 @@
 						<form action="">
 
 						<label for="name">Name</label>
-						<input type="text" id="name" name="name" placeholder="Your name..." style="margin-top:2vh;">
+						<input type="text" id="name" name="name" placeholder="Your name" style="width: 12rem; margin-top:2vh; font-family: 'Montserrat', sans-serif;">
+						<br>
+						<label for="email" style="font-family: 'Caudex', serif;">Email</label>
+						<input type="email" id="email" name="email" placeholder="Your email" style=" width:12rem; margin-top:2vh; font-family: 'Montserrat', sans-serif;">
 						<br>
 						<label for="subject">Subject</label>
-						<textarea id="subject" name="subject" placeholder="Write something..." style="height:200px; width:200px; margin-top:2vh;"></textarea>
+						<textarea id="subject" name="subject" placeholder="Write something..." style="height:50px; width:15rem; margin-top:2vh; font-family: 'Montserrat', sans-serif;"></textarea>
 
 						<input type="submit" value="Submit">
 
