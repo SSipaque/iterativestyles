@@ -313,13 +313,12 @@ a:link {
 }
 
 
-/* #Homepage {
-    
-} */
+/* Homepage */
 #homepage-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+/* homepage desktop */
 #desktop-container-homepage {
     /* background-color: #292546; */
     width: 45rem;
@@ -509,11 +508,11 @@ figcaption {
 }
 
 /* #Contact-page */
-/* Desktop contact page */
 #contact-page-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+/* Desktop contact page */
 #desktop-container-contact-page {
     /* background-color: #292546; */
     width: 45rem;
@@ -537,7 +536,7 @@ figcaption {
 }
 .nav-menu-cd {
     text-align: right;
-    margin-top: -6.5vh;
+    margin-top: -3.5vh;
     margin-right: 3vw;
 }
 .body-cd {
@@ -591,7 +590,7 @@ figcaption {
 }
 .nav-menu-cm {
     text-align: right;
-    margin-top: -6.5vh;
+    margin-top: -4vh;
     margin-right: 3vw;
 }
 .body-cm {
@@ -627,6 +626,67 @@ figcaption {
     width: 28vw;
     height: 6vh;
     margin-top: 16vh;
+}
+
+/* #Article */
+#article-page-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+/* article desktop */
+.container-ad{
+    background-color: #EBEBEB;
+    width: 50vw;
+    height: 39vw;
+}
+.header-ad {
+    background-color: #BBB8D1;
+    width: 50vw;
+    height: 5vh;
+}
+.site-title-ad {
+    margin-left: 3vw;
+}
+.nav-menu-ad {
+    text-align: right;
+    margin-top: -4vh; 
+    margin-right: 3vw;
+}
+.body-ad {
+    width: 50vw;
+    height: fit-content;
+}
+.article-title-ad {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 1vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+.article-info {
+    color: #798276;
+    font-size: 0.65em;
+    margin-left: 7vw; 
+    margin-top: -1vh;
+}
+.article-figcaption {
+    color: #798276;
+    font-size: 0.65em;
+    margin-left: -1vw; 
+    margin-top: -1vh;
+    text-align: center;
+}
+.body-text01-ad {
+    font-size: 0.8em;
+    margin-top: 1vh;
+    margin-left: 7vw;
+    margin-right: 7vw;
+}
+.footer-ad {
+    background-color: #BBB8D1;
+    width: 50vw;
+    height: 5vh;
+    margin-top: 3vh;
 }
 
 
