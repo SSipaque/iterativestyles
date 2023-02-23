@@ -632,8 +632,17 @@ figcaption {
 #article-page-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    /* margin-bottom: 2rem; */
 }
 /* article desktop */
+#desktop-container-article {
+    /* background-color: #292546; */
+    width: 45rem;
+    height: 35.2rem;
+    margin: 1rem 0 2rem 0;
+    
+    overflow: hidden;
+}
 .container-ad{
     background-color: #EBEBEB;
     width: 50vw;
@@ -645,9 +654,11 @@ figcaption {
     height: 5vh;
 }
 .site-title-ad {
+    font-family: 'Caudex', serif;
     margin-left: 3vw;
 }
 .nav-menu-ad {
+    font-family: 'Caudex', serif;
     text-align: right;
     margin-top: -4vh; 
     margin-right: 3vw;
@@ -657,26 +668,36 @@ figcaption {
     height: fit-content;
 }
 .article-title-ad {
+    font-family: 'Caudex', serif;
     font-size: 1.1em;
     font-weight: bold;
     margin-top: 1vh;
     margin-left: 7vw;
-    margin-right: 7vw;
+    margin-right: 6vw;
 }
 .article-info {
     color: #798276;
+    font-family: 'Caudex', serif;
     font-size: 0.65em;
+    margin-left: 7vw; 
+    margin-top: -1vh;
+}
+#article-img-d {
+    width: 32rem; 
+    height: 15rem; 
     margin-left: 7vw; 
     margin-top: -1vh;
 }
 .article-figcaption {
     color: #798276;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.65em;
     margin-left: -1vw; 
-    margin-top: -1vh;
+    margin-top: 0vh;
     text-align: center;
 }
 .body-text01-ad {
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
     margin-top: 1vh;
     margin-left: 7vw;
@@ -686,7 +707,79 @@ figcaption {
     background-color: #BBB8D1;
     width: 50vw;
     height: 5vh;
-    margin-top: 3vh;
+    margin-top: 0vh;
+}
+/*article mobile template  */
+#mobile-container-article {
+    /* background-color: #292546; */
+    width: 25rem;
+    height: 35.2rem;
+    margin: 1rem 0 2rem 0;
+    
+    overflow: hidden;
+}
+.container-am{
+    background-color: #EBEBEB;
+    width: 28vw;
+    height: 39vw;
+}
+.header-am {
+    background-color: #BBB8D1;
+    width: 28vw;
+    height: 5vh;
+}
+.site-title-am {
+    margin-left: 3vw;
+}
+.nav-menu-am {
+    text-align: right;
+    margin-top: -6.5vh;
+    margin-right: 3vw;
+}
+.body-am {
+    width: 28vw;
+    height: fit-content;
+}
+.article-title-am {
+    font-family: 'Caudex', serif;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 0.5vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.article-info-m {
+    color: #798276;
+    font-size: 0.65em;
+    margin-left: 1vw; 
+    margin-top: -1vh;
+}
+#article-img-m {
+    width: 23rem; 
+    height: 15rem; 
+    margin-left: 1vw; 
+    margin-top: -1vh;
+}
+.article-figcaption-m {
+    color: #798276;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.65em;
+    margin-left: -1vw; 
+    margin-top: 0vh;
+    text-align: center;
+}
+.body-text01-am {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
+    margin-top: 1rem;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.footer-am {
+    background-color: #BBB8D1;
+    width: 28vw;
+    height: 5vh;
+    margin-top: 0vh;
 }
 
 

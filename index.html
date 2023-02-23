@@ -90,8 +90,8 @@
     <div class="tab">
     <!-- The code for each template needs to be added -->
 		<button class="tablinks" onclick="openTemplate(event, 'Homepage')" >Homepage</button>
-		<button class="tablinks" onclick="openTemplate(event, 'Contact_page')" id="defaultOpen">Contact</button>
-		<button class="tablinks" onclick="openTemplate(event, 'Article')">Article</button>
+		<button class="tablinks" onclick="openTemplate(event, 'Contact_page')" >Contact</button>
+		<button class="tablinks" onclick="openTemplate(event, 'Article')" id="defaultOpen">Article</button>
     </div>
 
 	<div id="Homepage" class="tabcontent">
@@ -215,11 +215,28 @@
 					<div class="body-ad">
 						<p class="article-title-ad">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
 						<p class="article-info">By John Doe, <br> Updated 6:22 PM EST, Sun November 6, 2022 </p>
-						<image src="/assets/flowerfield.jpg" alt="bright image of a field of flowers" style="width: 35vw; height: 23vh; margin-left: 7vw; margin-top: -1vh;"></image>
+						<image id="article-img-d" src="/assets/flowerfield.jpg" alt="bright image of a field of flowers"></image>
 						<figcaption class="article-figcaption">Duis ut diam quam nulla </figcaption>
 						<p class="body-text01-ad">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Urna nec tincidunt praesent semper feugiat nibh sed. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Faucibus vitae aliquet nec ullamcorper sit amet. </p>
 					</div>
 					<div class="footer-ad"></div>
+				</div>
+			</div>
+		
+			<!-- Mobile article template -->
+			<div id="mobile-container-article">
+				<div class="container-am">
+					<div class="header-am">
+						<p class="site-title-am">Lorem Ipsum</p> <p class="nav-menu">Home Contact</p>
+					</div>
+					<div class="body-am">
+						<p class="article-title-am">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
+						<p class="article-info-m">By John Doe, <br> Updated 6:22 PM EST, Sun November 6, 2022 </p>
+						<image id="article-img-m" src="/assets/flowerfield.jpg" alt="bright image of a field of flowers"></image>
+						<figcaption class="article-figcaption-m">Duis ut diam quam nulla </figcaption>
+						<p class="body-text01-am">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Urna nec tincidunt praesent semper feugiat nibh sed. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Faucibus vitae aliquet nec ullamcorper sit amet. </p>
+					</div>
+					<div class="footer-am"></div>
 				</div>
 			</div>
 		</div>
