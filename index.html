@@ -91,7 +91,7 @@
     <!-- The code for each template needs to be added -->
 		<button class="tablinks" onclick="openTemplate(event, 'Homepage')" >Homepage</button>
 		<button class="tablinks" onclick="openTemplate(event, 'Contact_page')" >Contact</button>
-		<button class="tablinks" onclick="openTemplate(event, 'Article')" id="defaultOpen">Article</button>
+		<button class="tablinks" onclick="openTemplate(event, 'Article')"  id="defaultOpen">Article</button>
     </div>
 
 	<div id="Homepage" class="tabcontent">
@@ -145,14 +145,14 @@
 		<div id="contact-page-grid">
 			<!-- desktop contact page  -->
 			<div id="desktop-container-contact-page">
-				<div class="container-cd">
-					<div class="header-cd">
+				<div id="container-cd">
+					<div id="header-cd">
 						<p class="site-title-cd">Lorem Ipsum</p> <p class="nav-menu">Home Contact</p>
 					</div>
 					<div class="body-cd">
 						<p class="homepage-title-cd">Contact Me</p>
 					</div>
-					<div class="strip-cd">
+					<div id="strip-cd">
 					<form action="" stye="font-family: 'Caudex', serif;">
 
 					<label for="name" stye="font-family: 'Caudex', serif;">Name</label>
@@ -165,23 +165,23 @@
 					<label for="subject" style="font-family: 'Caudex', serif; float:left; margin-top: 2rem; margin-left: 3rem;">Subject</label>
 					<textarea id="subject" name="subject" placeholder="Write something..." style="height:50px; width: 24rem; margin-top: 1rem; margin-bottom: 1rem; font-family: 'Montserrat', sans-serif;"></textarea>
 
-					<input type="submit" value="Submit" style="font-family: 'Montserrat', sans-serif; float: right;">
+					<input id="submit-btn-cd" type="submit" value="Submit">
 					</form>
 					</div>
-					<div class="footer-cd">	
+					<div id="footer-cd">	
 					</div>
 				</div>
 			</div>
 			<!-- mobile contact page -->
 			<div id="mobile-container-contact-page">
-				<div class="container-cm">
-						<div class="header-cm">
+				<div id="container-cm">
+						<div id="header-cm">
 							<p class="site-title-cm">Lorem Ipsum</p> <p class="nav-menu-cm">Home Contact</p>
 						</div>
 						<div class="body-cm">
 							<p class="homepage-title-cd">Contact Me</p>
 						</div>
-						<div class="strip-cm">
+						<div id="strip-cm">
 						<form action="">
 
 						<label for="name">Name</label>
@@ -193,11 +193,11 @@
 						<label for="subject"  style="font-family: 'Caudex', serif; float:left; margin-top: 2rem; margin-left: 1.3rem;">Subject</label>
 						<textarea id="subject" name="subject" placeholder="Write something..." style="height:50px; width:10.5rem; margin-top:2vh; font-family: 'Montserrat', sans-serif;"></textarea>
 
-						<input type="submit" value="Submit">
+						<input id="submit-btn-cm" type="submit" value="Submit">
 
 						</form>
 						</div>
-						<div class="footer-cm">	
+						<div id="footer-cm">	
 						</div>
 				</div>
 			</div>
@@ -208,8 +208,8 @@
 		<div id="article-page-grid">
 			<!-- Contact page desktop -->
 			<div id="desktop-container-article">
-				<div class="container-ad">
-					<div class="header-ad">
+				<div id="container-ad">
+					<div id="header-ad">
 						<p class="site-title-ad">Lorem Ipsum</p> <p class="nav-menu">Home Contact</p>
 					</div>
 					<div class="body-ad">
@@ -219,14 +219,14 @@
 						<figcaption class="article-figcaption">Duis ut diam quam nulla </figcaption>
 						<p class="body-text01-ad">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Urna nec tincidunt praesent semper feugiat nibh sed. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Faucibus vitae aliquet nec ullamcorper sit amet. </p>
 					</div>
-					<div class="footer-ad"></div>
+					<div id="footer-ad"></div>
 				</div>
 			</div>
 		
 			<!-- Mobile article template -->
 			<div id="mobile-container-article">
-				<div class="container-am">
-					<div class="header-am">
+				<div id="container-am">
+					<div id="header-am">
 						<p class="site-title-am">Lorem Ipsum</p> <p class="nav-menu">Home Contact</p>
 					</div>
 					<div class="body-am">
@@ -236,7 +236,7 @@
 						<figcaption class="article-figcaption-m">Duis ut diam quam nulla </figcaption>
 						<p class="body-text01-am">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Urna nec tincidunt praesent semper feugiat nibh sed. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Faucibus vitae aliquet nec ullamcorper sit amet. </p>
 					</div>
-					<div class="footer-am"></div>
+					<div id="footer-am"></div>
 				</div>
 			</div>
 		</div>
@@ -322,9 +322,10 @@
 			c1.style.backgroundColor = document.getElementById("color1value").value;
 			document.getElementById("container-d").style.backgroundColor = document.getElementById("color1value").value;
 			document.getElementById("container-m").style.backgroundColor = document.getElementById("color1value").value;
-			// console.log(document.getElementById("container-d").style.backgroundColor); 
-			// c2.style.backgroundColor = document.getElementById("color2value").value;
-			// console.log(c2.style.backgroundColor); 
+			document.getElementById("container-cd").style.backgroundColor = document.getElementById("color1value").value;
+			document.getElementById("container-cm").style.backgroundColor = document.getElementById("color1value").value;
+			document.getElementById("container-ad").style.backgroundColor = document.getElementById("color1value").value;
+			document.getElementById("container-am").style.backgroundColor = document.getElementById("color1value").value;
 		}
 		function updateColor2(){
 			const c2 = document.getElementById("color2");
@@ -332,8 +333,8 @@
 
 			document.getElementById("strip-d").style.backgroundColor = document.getElementById("color2value").value;
 			document.getElementById("strip-m").style.backgroundColor = document.getElementById("color2value").value;
-			// console.log(document.getElementById("strip-m").style.backgroundColor);
-			// console.log(c2.style.backgroundColor); 
+			document.getElementById("strip-cd").style.backgroundColor = document.getElementById("color2value").value;
+			document.getElementById("strip-cm").style.backgroundColor = document.getElementById("color2value").value;
 		}
 		function updateColor3(){
 			const c3 = document.getElementById("color3");
@@ -343,8 +344,14 @@
 			document.getElementById("footer-d").style.backgroundColor = document.getElementById("color3value").value;
 			document.getElementById("header-m").style.backgroundColor = document.getElementById("color3value").value;
 			document.getElementById("footer-m").style.backgroundColor = document.getElementById("color3value").value;
-			// console.log(c3.style.backgroundColor); 
-			// console.log(document.getElementById("header-d").style.backgroundColor); 
+			document.getElementById("header-cd").style.backgroundColor = document.getElementById("color3value").value;
+			document.getElementById("footer-cd").style.backgroundColor = document.getElementById("color3value").value;
+			document.getElementById("header-cm").style.backgroundColor = document.getElementById("color3value").value;
+			document.getElementById("footer-cm").style.backgroundColor = document.getElementById("color3value").value;
+			document.getElementById("header-ad").style.backgroundColor = document.getElementById("color3value").value;
+			document.getElementById("footer-ad").style.backgroundColor = document.getElementById("color3value").value;
+			document.getElementById("header-am").style.backgroundColor = document.getElementById("color3value").value;
+			document.getElementById("footer-am").style.backgroundColor = document.getElementById("color3value").value;
 		}
 		function updateColor4(){
 			const c4 = document.getElementById("color4");
@@ -360,7 +367,8 @@
 			//This part below does not work properly at the moment
 			document.getElementById("btn01").style.backgroundColor = document.getElementById("color6value").value;
 			document.getElementById("btn01-m").style.backgroundColor = document.getElementById("color6value").value;
-			// console.log(document.getElementById("btn01-m").style.backgroundColor);
+			document.getElementById("submit-btn-cd").style.backgroundColor = document.getElementById("color6value").value;
+			document.getElementById("submit-btn-cm").style.backgroundColor = document.getElementById("color6value").value;
 		}
 
 
