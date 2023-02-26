@@ -219,13 +219,13 @@ a:link {
 #h1f1:hover{
     cursor: pointer;
 }
-.h3f1 {
+#h3f1 {
     font-size: 1.8rem;
 }
-.h5f1 {
+#h5f1 {
     font-size: 1.4rem;
 }
-.smallest-font1 {
+#smallest-font1 {
     font-size: 1rem;
 }
 
@@ -249,13 +249,13 @@ a:link {
 #h1f2:hover{
     cursor: pointer;
 }
-.h3f2 {
+#h3f2 {
     font-size: 1.8rem;
 }
-.h5f2 {
+#h5f2 {
     font-size: 1.4rem;
 }
-.smallest-font2 {
+#smallest-font2 {
     font-size: 1rem;
 }
 
