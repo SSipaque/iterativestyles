@@ -337,13 +337,14 @@ a:link {
     width: 50vw;
     height: 4vh;
 }
-.site-title-d {
+#site-title-d {
     font-family: 'Caudex', serif;
     margin-left: 3vw;
     
 /* 			padding-bottom: 0.5rem; */
 }
-.nav-menu {
+#nav-menu {
+    font-family: "Caudex", serif;
     text-align: right;
     margin-top: -4vh; 
     margin-right: 3vw;
@@ -354,7 +355,7 @@ a:link {
     width: 50vw;
     height: fit-content;
 }
-.homepage-title-d {
+#homepage-title-d {
     text-align: center;
     font-size: 1.5em;
     margin-top: -0.2vh;
@@ -365,17 +366,17 @@ a:link {
     margin-left: 3vw; 
     margin-top: -1vh;
 }
-figcaption {
+#figcaption-d {
     color: #798276;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.65em; 
     margin-left: 8vw; 
-    margin-top: 0vh;
+    margin-bottom: 1rem;
 }
-.body-text01 {
+#body-text01 {
     font-family: 'Montserrat', sans-serif;
     font-size: .9em; 
-    line-height: 1.5em;
+    /* line-height: 1.5em; */
     margin-top: -23vh;
     margin-left: 24vw;
 }
@@ -387,13 +388,13 @@ figcaption {
     margin-top: 16vh;
     padding: 0 4vw 0 4vw;
 }
-.strip-title {
+#strip-title {
     font-family: 'Caudex', serif;
 }
-.strip-text01 {
+#strip-text01 {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em; 
-    line-height: 1.5em;
+    /* line-height: 1.5em; */
 }
 #btn01 {
     background-color: #292546;
@@ -433,10 +434,11 @@ figcaption {
     width: 28vw;
     height: 4vh;
 }
-.site-title-m {
+#site-title-m {
     margin-left: 3vw;
 }
-.nav-menu-m {
+#nav-menu-m {
+    font-family: "Caudex", serif;
     text-align: right;
     margin-top: -4.5vh; 
     margin-right: 3vw;
@@ -445,7 +447,7 @@ figcaption {
     width: 28vw;
     height: fit-content;
 }
-.homepage-title-m {
+#homepage-title-m {
     text-align: center;
     font-size: 1.5em; 
     margin-top: -0.2vh; /* originally -0.2vh*/
@@ -456,17 +458,17 @@ figcaption {
     margin-left: 5vw; 
     margin-top: -3vh;
 }
-.figcaption-m {
+#figcaption-m {
     color: #798276;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.65em;
     margin-left: 9vw;
     margin-top: 0vh;
 }
-.body-text01-m {
+#body-text01-m {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em; 
-    line-height: 1.5em;
+    /* line-height: 1.5em; */
     text-align: center;
     margin-top: 0.5vh; 
 }
@@ -481,10 +483,10 @@ figcaption {
 /* .strip-title-m {
 
 } */
-.strip-text01-m {
+#strip-text01-m {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em; 
-    line-height: 1.5em;
+    /* line-height: 1.5em; */
     margin-top: -1vh;
     margin-bottom: 0.2vh;
 }
@@ -531,19 +533,21 @@ figcaption {
     width: 50vw;
     height: 5vh;
 }
-.site-title-cd {
+#site-title-cd {
     margin-left: 3vw;
 }
-.nav-menu-cd {
+#nav-menu-cd {
+    font-family: "Caudex", serif;
     text-align: right;
-    margin-top: -3.5vh;
+    margin-top: -4vh; 
     margin-right: 3vw;
+    margin-bottom: -5vh; 
 }
 .body-cd {
     width: 50vw;
     height: fit-content;
 }
-.homepage-title-cd {
+#homepage-title-cd {
     text-align: center;
     font-size: 1.5em;
     margin-top: 1vh;
@@ -557,8 +561,37 @@ figcaption {
     margin-left: 7vh;
     padding: 0 4vw 0 4vw;
 }
-.strip-text01-cd {
+#strip-text01-cd {
     font-size: 0.8em;
+}
+#name-label-cd {
+    font-family: 'Caudex', serif;
+}
+#name-cd {
+    font-family: 'Montserrat', sans-serif;
+    width:20.5rem; 
+    margin-top:2vh; 
+}
+#email-label-cd {
+    font-family: 'Caudex', serif;
+}
+#email-cd {
+    font-family: 'Montserrat', sans-serif;
+    width:20.5rem; 
+    margin-top:2vh;
+}
+#subject-label-cd {
+    font-family: 'Caudex', serif;
+    float:left; 
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+#subject-cd {
+    font-family: 'Montserrat', sans-serif;
+    height:50px; 
+    width: 24rem; 
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
 }
 #submit-btn-cd {
     color: #f8fdff;
@@ -595,10 +628,11 @@ figcaption {
     width: 28vw;
     height: 5vh;
 }
-.site-title-cm {
+#site-title-cm {
     margin-left: 3vw;
 }
-.nav-menu-cm {
+#nav-menu-cm {
+    font-family: "Caudex", serif;
     text-align: right;
     margin-top: -4vh;
     margin-right: 3vw;
@@ -607,12 +641,12 @@ figcaption {
     width: 28vw;
     height: fit-content;
 }
-.homepage-title-cm {
+#homepage-title-cm {
     text-align: center;
     font-size: 1.5em;
     margin-top: -0.2vh;
 }
-.body-text01-cm {
+#body-text01-cm {
     font-size: 0.8em;
     text-align: center;
     margin-top: -0.5vh;
@@ -626,10 +660,38 @@ figcaption {
     margin-left: 0vh;
     padding: 0 4vw 0 4vw;
 }
-.strip-text01-cm {
+#strip-text01-cm {
     font-size: 0.8em;
     margin-top: -1vh;
     margin-bottom: 0.2vh;
+}
+#name-label-cm {
+    font-family: 'Caudex', serif;
+}
+#name-cm {
+    font-family: 'Montserrat', sans-serif;
+    width: 12rem; 
+    margin-top:2vh; 
+}
+#email-label-cm {
+    font-family: 'Caudex', serif;
+}
+#email-cm {
+    font-family: 'Montserrat', sans-serif;
+    width:12rem; 
+    margin-top:2vh; 
+}
+#subject-label-cm {
+    font-family: 'Caudex', serif;
+    float:left; 
+    margin-top: 2rem; 
+    margin-left: 1.3rem;
+}
+#subject-cm { 
+    font-family: 'Montserrat', sans-serif;
+    height:50px; 
+    width:10.5rem; 
+    margin-top:2vh; 
 }
 #submit-btn-cm {
     color: #f8fdff;
@@ -753,8 +815,9 @@ figcaption {
     margin-left: 3vw;
 }
 .nav-menu-am {
+    font-family: "Caudex", serif;
     text-align: right;
-    margin-top: -6.5vh;
+    margin-top: -4vh;
     margin-right: 3vw;
 }
 .body-am {

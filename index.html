@@ -50,7 +50,7 @@
 		</div>
 		<div id="font1">
 			<!-- Font 1 font-family drop-down menu -->
-			<select id="input-font1" class="input" onchange="changeFontStyle1(this); changeFontText1();">
+			<select id="input-font1" class="input" onchange="changeFontStyle1(this); changeFontText1(); changeFontStyle1Templates(this);">
 				<option value="Montserrat">Montserrat</option>
 				<option value="Arial">Arial</option>
 				<option value="Helvetica">Helvetica</option>
@@ -68,7 +68,7 @@
 		
 		<div id="font2">
 			<!-- Font 2 font-family drop-down menu -->
-			<select id="input-font2" class="input" onchange="changeFontStyle2(this); changeFontText2();">
+			<select id="input-font2" class="input" onchange="changeFontStyle2(this); changeFontText2(); changeFontStyle2Templates(this);">
 				<option value="Montserrat" selected="selected">Montserrat</option>
 				<option value="Arial">Arial</option>
 				<option value="Helvetica">Helvetica</option>
@@ -100,18 +100,19 @@
 			<div id="desktop-container-homepage">
 				<div id="container-d">
 					<div id="header-d">
-						<p class="site-title-d">Lorem Ipsum</p> <p class="nav-menu">Home Contact</p>
+						<p id="site-title-d">Lorem Ipsum</p> 
+						<p id="nav-menu">Home Contact</p>
 					</div>
 					<div class="body-d">
-						<p class="homepage-title-d">Lorem Ipsum</p>
+						<p id="homepage-title-d">Lorem Ipsum</p>
 						<image id="home-img-d" src="/assets/flowers-and-hand2.jpg" alt="hand holding tiny  flowers"></image>
-						<figcaption>Etiam eu pharetra ex</figcaption>
-						<p class="body-text01">Aliquam est ante, imperdiet sed dolor vitae, <br> maximus ornare diam. 
+						<figcaption id="figcaption-d">Etiam eu pharetra ex</figcaption>
+						<p id="body-text01">Aliquam est ante, imperdiet sed dolor vitae, <br> maximus ornare diam. 
 							Duis vel aliquet sapien, <br> in tincidunt dui. Vestibulum tincidunt.</p>
 					</div>
 					<div id="strip-d">
-						<p class="strip-title">Lorem Ipsum</p>
-						<p class="strip-text01">Aliquam est ante, imperdiet sed dolor vitae, maximus ornare diam. Duis vel aliquet sapien, in tincidunt dui</p>
+						<p id="strip-title">Lorem Ipsum</p>
+						<p id="strip-text01">Aliquam est ante, imperdiet sed dolor vitae, maximus ornare diam. Duis vel aliquet sapien, in tincidunt dui</p>
 						<button id="btn01">Get Started</button>
 					</div>
 					<div id="footer-d"></div>
@@ -121,18 +122,19 @@
 				<div id="mobile-container-homepage">
 					<div id="container-m">
 						<div id="header-m">
-							<p class="site-title-m">Lorem Ipsum</p> <p class="nav-menu-m">Home Contact</p>
+							<p id="site-title-m">Lorem Ipsum</p> 
+							<p id="nav-menu-m">Home Contact</p>
 						</div>
 						<div class="body-m">
-							<p class="homepage-title-m">Lorem Ipsum</p>
+							<p id="homepage-title-m">Lorem Ipsum</p>
 							<image id="home-img-m" src="/assets/flowers-and-hand2.jpg" alt="hand holding tiny  flowers"></image>
-							<figcaption class="figcaption-m">Etiam eu pharetra ex</figcaption>
-							<p class="body-text01-m">Aliquam est ante, imperdiet sed dolor vitae, <br> maximus ornare diam. 
+							<figcaption id="figcaption-m">Etiam eu pharetra ex</figcaption>
+							<p id="body-text01-m">Aliquam est ante, imperdiet sed dolor vitae, <br> maximus ornare diam. 
 								Duis vel aliquet sapien, <br> in tincidunt dui. Vestibulum tincidunt.</p>
 						</div>
 						<div id="strip-m">
-							<p class="strip-title-m">Lorem Ipsum</p>
-							<p class="strip-text01-m">Aliquam est ante, imperdiet sed dolor vitae, maximus ornare diam. Duis vel aliquet sapien, in tincidunt dui</p>
+							<p id="strip-title-m">Lorem Ipsum</p>
+							<p id="strip-text01-m">Aliquam est ante, imperdiet sed dolor vitae, maximus ornare diam. Duis vel aliquet sapien, in tincidunt dui</p>
 							<button id="btn01-m">Get Started</button>
 						</div>
 						<div id="footer-m"></div>
@@ -147,23 +149,24 @@
 			<div id="desktop-container-contact-page">
 				<div id="container-cd">
 					<div id="header-cd">
-						<p class="site-title-cd">Lorem Ipsum</p> <p class="nav-menu">Home Contact</p>
+						<p id="site-title-cd">Lorem Ipsum</p> 
+						<p id="nav-menu-cd">Home Contact</p>
 					</div>
 					<div class="body-cd">
-						<p class="homepage-title-cd">Contact Me</p>
+						<p id="homepage-title-cd">Contact Me</p>
 					</div>
 					<div id="strip-cd">
-					<form action="" stye="font-family: 'Caudex', serif;">
+					<form action="">
 
-					<label for="name" stye="font-family: 'Caudex', serif;">Name</label>
-					<input type="text" id="name" name="name" placeholder="Your name" style=" width:20.5rem; margin-top:2vh; font-family: 'Montserrat', sans-serif;">
+					<label id="name-label-cd" for="name">Name</label>
+					<input type="text" id="name-cd" name="name" placeholder="Your name">
 					<br>
 
-					<label for="email" style="font-family: 'Caudex', serif;">Email</label>
-					<input type="email" id="email" name="email" placeholder="Your email" style=" width:20.5rem; margin-top:2vh; font-family: 'Montserrat', sans-serif;">
+					<label id="email-label-cd" for="email">Email</label>
+					<input type="email" id="email-cd" name="email" placeholder="Your email">
 					<br>
-					<label for="subject" style="font-family: 'Caudex', serif; float:left; margin-top: 2rem; margin-left: 3rem;">Subject</label>
-					<textarea id="subject" name="subject" placeholder="Write something..." style="height:50px; width: 24rem; margin-top: 1rem; margin-bottom: 1rem; font-family: 'Montserrat', sans-serif;"></textarea>
+					<label id="subject-label-cd" for="subject">Subject</label>
+					<textarea id="subject-cd" name="subject" placeholder="Write something..."></textarea>
 
 					<input id="submit-btn-cd" type="submit" value="Submit">
 					</form>
@@ -176,22 +179,23 @@
 			<div id="mobile-container-contact-page">
 				<div id="container-cm">
 						<div id="header-cm">
-							<p class="site-title-cm">Lorem Ipsum</p> <p class="nav-menu-cm">Home Contact</p>
+							<p id="site-title-cm">Lorem Ipsum</p> 
+							<p id="nav-menu-cm">Home Contact</p>
 						</div>
 						<div class="body-cm">
-							<p class="homepage-title-cd">Contact Me</p>
+							<p id="homepage-title-cm">Contact Me</p>
 						</div>
 						<div id="strip-cm">
 						<form action="">
 
-						<label for="name">Name</label>
-						<input type="text" id="name" name="name" placeholder="Your name" style="width: 12rem; margin-top:2vh; font-family: 'Montserrat', sans-serif;">
+						<label id="name-label-cm" for="name">Name</label>
+						<input type="text" id="name-cm" name="name" placeholder="Your name">
 						<br>
-						<label for="email" style="font-family: 'Caudex', serif;">Email</label>
-						<input type="email" id="email" name="email" placeholder="Your email" style=" width:12rem; margin-top:2vh; font-family: 'Montserrat', sans-serif;">
+						<label id="email-label-cm" for="email" style="font-family: 'Caudex', serif;">Email</label>
+						<input type="email" id="email-cm" name="email" placeholder="Your email">
 						<br>
-						<label for="subject"  style="font-family: 'Caudex', serif; float:left; margin-top: 2rem; margin-left: 1.3rem;">Subject</label>
-						<textarea id="subject" name="subject" placeholder="Write something..." style="height:50px; width:10.5rem; margin-top:2vh; font-family: 'Montserrat', sans-serif;"></textarea>
+						<label id="subject-label-cm" for="subject">Subject</label>
+						<textarea id="subject-cm" name="subject" placeholder="Write something..." ></textarea>
 
 						<input id="submit-btn-cm" type="submit" value="Submit">
 
@@ -206,11 +210,12 @@
 
     <div id="Article" class="tabcontent">
 		<div id="article-page-grid">
-			<!-- Contact page desktop -->
+			<!-- article desktop -->
 			<div id="desktop-container-article">
 				<div id="container-ad">
 					<div id="header-ad">
-						<p class="site-title-ad">Lorem Ipsum</p> <p class="nav-menu">Home Contact</p>
+						<p class="site-title-ad">Lorem Ipsum</p> 
+						<p class="nav-menu-ad">Home Contact</p>
 					</div>
 					<div class="body-ad">
 						<p class="article-title-ad">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
@@ -227,7 +232,8 @@
 			<div id="mobile-container-article">
 				<div id="container-am">
 					<div id="header-am">
-						<p class="site-title-am">Lorem Ipsum</p> <p class="nav-menu">Home Contact</p>
+						<p class="site-title-am">Lorem Ipsum</p>
+						<p class="nav-menu-am">Home Contact</p>
 					</div>
 					<div class="body-am">
 						<p class="article-title-am">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
@@ -392,10 +398,44 @@
 		
 		var changeFontStyle1 = function (font) {
             document.getElementById("font1").style.fontFamily = font.value;
+			// changeFontStyle1Templates();
+			// for some reason this stops the changeFontText1 function from working so 
+			// template text change must be done separately
+			// document.getElementById("site-title-d").style.fontFamily = font.value;
+			// document.getElementById("homepage-title-d").style.fontFamily = font.value;
         }
 		var changeFontText1 = function() {
 			const input1 = document.getElementById("input-font1");
 			document.getElementById('h1f1').innerHTML = input1.value;
+		}
+
+		// To change fontstyle of templates according to Font1 changes 
+		var changeFontStyle1Templates = function(font) {
+		// homepage desktop
+		document.getElementById("site-title-d").style.fontFamily = font.value;
+		document.getElementById("nav-menu").style.fontFamily = font.value;
+		document.getElementById("homepage-title-d").style.fontFamily = font.value;
+		document.getElementById("strip-title").style.fontFamily = font.value;
+		// homepage mobile
+		document.getElementById("site-title-m").style.fontFamily = font.value;
+		document.getElementById("nav-menu-m").style.fontFamily = font.value;
+		document.getElementById("homepage-title-m").style.fontFamily = font.value;
+		document.getElementById("strip-title-m").style.fontFamily = font.value;
+
+		// contact desktop
+		document.getElementById("site-title-cd").style.fontFamily = font.value;
+		document.getElementById("nav-menu-cd").style.fontFamily = font.value;
+		document.getElementById("homepage-title-cd").style.fontFamily = font.value;
+		document.getElementById("name-label-cd").style.fontFamily = font.value;
+		document.getElementById("email-label-cd").style.fontFamily = font.value;
+		document.getElementById("subject-label-cd").style.fontFamily = font.value;
+		// contact mobile
+		document.getElementById("site-title-cm").style.fontFamily = font.value;
+		document.getElementById("nav-menu-cm").style.fontFamily = font.value;
+		document.getElementById("homepage-title-cm").style.fontFamily = font.value;
+		document.getElementById("name-label-cm").style.fontFamily = font.value;
+		document.getElementById("email-label-cm").style.fontFamily = font.value;
+		document.getElementById("subject-label-cm").style.fontFamily = font.value;
 		}
 
 		var infont2= document.getElementById("input-font2");
@@ -412,6 +452,31 @@
 		var changeFontText2 = function() {
 			const input2 = document.getElementById("input-font2");
 			document.getElementById('h1f2').innerHTML = input2.value;
+		}
+
+		// To change fontstyle of templates according to Font2 changes 
+		var changeFontStyle2Templates = function(font) {
+		// homepage desktop
+		document.getElementById("body-text01").style.fontFamily = font.value;
+		document.getElementById("strip-text01").style.fontFamily = font.value;
+		document.getElementById("btn01").style.fontFamily = font.value;
+		document.getElementById("figcaption-d").style.fontFamily = font.value;
+		// homepage mobile
+		document.getElementById("body-text01-m").style.fontFamily = font.value;
+		document.getElementById("strip-text01-m").style.fontFamily = font.value;
+		document.getElementById("btn01-m").style.fontFamily = font.value;
+		document.getElementById("figcaption-m").style.fontFamily = font.value;
+
+		// contact desktop
+		document.getElementById("name-cd").style.fontFamily = font.value;
+		document.getElementById("email-cd").style.fontFamily = font.value;
+		document.getElementById("subject-cd").style.fontFamily = font.value;
+		document.getElementById("submit-btn-cd").style.fontFamily = font.value;
+		// contact mobile
+		document.getElementById("name-cm").style.fontFamily = font.value;
+		document.getElementById("email-cm").style.fontFamily = font.value;
+		document.getElementById("subject-cm").style.fontFamily = font.value;
+		document.getElementById("submit-btn-cm").style.fontFamily = font.value;
 		}
 
 	</script>
