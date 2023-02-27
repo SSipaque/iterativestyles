@@ -214,15 +214,15 @@
 			<div id="desktop-container-article">
 				<div id="container-ad">
 					<div id="header-ad">
-						<p class="site-title-ad">Lorem Ipsum</p> 
-						<p class="nav-menu-ad">Home Contact</p>
+						<p id="site-title-ad">Lorem Ipsum</p> 
+						<p id="nav-menu-ad">Home Contact</p>
 					</div>
 					<div class="body-ad">
-						<p class="article-title-ad">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
-						<p class="article-info">By John Doe, <br> Updated 6:22 PM EST, Sun November 6, 2022 </p>
+						<p id="article-title-ad">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
+						<p id="article-info">By John Doe, <br> Updated 6:22 PM EST, Sun November 6, 2022 </p>
 						<image id="article-img-d" src="/assets/flowerfield.jpg" alt="bright image of a field of flowers"></image>
-						<figcaption class="article-figcaption">Duis ut diam quam nulla </figcaption>
-						<p class="body-text01-ad">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Urna nec tincidunt praesent semper feugiat nibh sed. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Faucibus vitae aliquet nec ullamcorper sit amet. </p>
+						<figcaption id="article-figcaption">Duis ut diam quam nulla </figcaption>
+						<p id="body-text01-ad">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Urna nec tincidunt praesent semper feugiat nibh sed. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Faucibus vitae aliquet nec ullamcorper sit amet. </p>
 					</div>
 					<div id="footer-ad"></div>
 				</div>
@@ -232,15 +232,15 @@
 			<div id="mobile-container-article">
 				<div id="container-am">
 					<div id="header-am">
-						<p class="site-title-am">Lorem Ipsum</p>
-						<p class="nav-menu-am">Home Contact</p>
+						<p id="site-title-am">Lorem Ipsum</p>
+						<p id="nav-menu-am">Home Contact</p>
 					</div>
 					<div class="body-am">
-						<p class="article-title-am">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
-						<p class="article-info-m">By John Doe, <br> Updated 6:22 PM EST, Sun November 6, 2022 </p>
+						<p id="article-title-am">Lorem ipsum dolor sit amet, incididunt ut labore et dolore magna aliqua.</p>
+						<p id="article-info-m">By John Doe, <br> Updated 6:22 PM EST, Sun November 6, 2022 </p>
 						<image id="article-img-m" src="/assets/flowerfield.jpg" alt="bright image of a field of flowers"></image>
-						<figcaption class="article-figcaption-m">Duis ut diam quam nulla </figcaption>
-						<p class="body-text01-am">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Urna nec tincidunt praesent semper feugiat nibh sed. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Faucibus vitae aliquet nec ullamcorper sit amet. </p>
+						<figcaption id="article-figcaption-m">Duis ut diam quam nulla </figcaption>
+						<p id="body-text01-am">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Urna nec tincidunt praesent semper feugiat nibh sed. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Faucibus vitae aliquet nec ullamcorper sit amet. </p>
 					</div>
 					<div id="footer-am"></div>
 				</div>
@@ -436,6 +436,17 @@
 		document.getElementById("name-label-cm").style.fontFamily = font.value;
 		document.getElementById("email-label-cm").style.fontFamily = font.value;
 		document.getElementById("subject-label-cm").style.fontFamily = font.value;
+
+		// article desktop
+		document.getElementById("site-title-ad").style.fontFamily = font.value;
+		document.getElementById("nav-menu-ad").style.fontFamily = font.value;
+		document.getElementById("article-title-ad").style.fontFamily = font.value;
+		document.getElementById("article-info").style.fontFamily = font.value;
+		// article mobile
+		document.getElementById("site-title-am").style.fontFamily = font.value;
+		document.getElementById("nav-menu-am").style.fontFamily = font.value;
+		document.getElementById("article-title-am").style.fontFamily = font.value;
+		document.getElementById("article-info-m").style.fontFamily = font.value;
 		}
 
 		var infont2= document.getElementById("input-font2");
@@ -477,6 +488,13 @@
 		document.getElementById("email-cm").style.fontFamily = font.value;
 		document.getElementById("subject-cm").style.fontFamily = font.value;
 		document.getElementById("submit-btn-cm").style.fontFamily = font.value;
+
+		// article desktop
+		document.getElementById("article-figcaption").style.fontFamily = font.value;
+		document.getElementById("body-text01-ad").style.fontFamily = font.value;
+		// artcile mobile
+		document.getElementById("article-figcaption-m").style.fontFamily = font.value;
+		document.getElementById("body-text01-am").style.fontFamily = font.value;
 		}
 
 	</script>

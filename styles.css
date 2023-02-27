@@ -735,11 +735,11 @@ a:link {
     width: 50vw;
     height: 5vh;
 }
-.site-title-ad {
+#site-title-ad {
     font-family: 'Caudex', serif;
     margin-left: 3vw;
 }
-.nav-menu-ad {
+#nav-menu-ad {
     font-family: 'Caudex', serif;
     text-align: right;
     margin-top: -4vh; 
@@ -749,7 +749,7 @@ a:link {
     width: 50vw;
     height: fit-content;
 }
-.article-title-ad {
+#article-title-ad {
     font-family: 'Caudex', serif;
     font-size: 1.1em;
     font-weight: bold;
@@ -757,7 +757,7 @@ a:link {
     margin-left: 7vw;
     margin-right: 6vw;
 }
-.article-info {
+#article-info {
     color: #798276;
     font-family: 'Caudex', serif;
     font-size: 0.65em;
@@ -770,7 +770,7 @@ a:link {
     margin-left: 7vw; 
     margin-top: -1vh;
 }
-.article-figcaption {
+#article-figcaption {
     color: #798276;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.65em;
@@ -778,7 +778,7 @@ a:link {
     margin-top: 0vh;
     text-align: center;
 }
-.body-text01-ad {
+#body-text01-ad {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
     margin-top: 1vh;
@@ -788,7 +788,7 @@ a:link {
 #footer-ad {
     background-color: #BBB8D1;
     width: 50vw;
-    height: 5vh;
+    height: 9vh;
     margin-top: 0vh;
 }
 /*article mobile template  */
@@ -810,11 +810,11 @@ a:link {
     width: 28vw;
     height: 5vh;
 }
-.site-title-am {
+#site-title-am {
     font-family: "Caudex", serif;
     margin-left: 3vw;
 }
-.nav-menu-am {
+#nav-menu-am {
     font-family: "Caudex", serif;
     text-align: right;
     margin-top: -4vh;
@@ -824,7 +824,7 @@ a:link {
     width: 28vw;
     height: fit-content;
 }
-.article-title-am {
+#article-title-am {
     font-family: 'Caudex', serif;
     font-size: 1em;
     font-weight: bold;
@@ -832,7 +832,7 @@ a:link {
     margin-left: 1vw;
     margin-right: 1vw;
 }
-.article-info-m {
+#article-info-m {
     color: #798276;
     font-family: "Caudex", serif;
     font-size: 0.65em;
@@ -845,7 +845,7 @@ a:link {
     margin-left: 1vw; 
     margin-top: -1vh;
 }
-.article-figcaption-m {
+#article-figcaption-m {
     color: #798276;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.65em;
@@ -853,7 +853,7 @@ a:link {
     margin-top: 0vh;
     text-align: center;
 }
-.body-text01-am {
+#body-text01-am {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.75em;
     margin-top: 1rem;
@@ -863,7 +863,7 @@ a:link {
 #footer-am {
     background-color: #BBB8D1;
     width: 28vw;
-    height: 5vh;
+    height: 7vh;
     margin-top: 0vh;
 }
 
