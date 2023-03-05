@@ -29,6 +29,13 @@ nav {
 }
 ul {
     list-style-type: none;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: center;
+}
+li {
+    padding: 0 1rem 0 1rem;
 }
 #home-nav {
     color: var(--dark-blue);
@@ -36,6 +43,14 @@ ul {
     transition: 0.3s;
 }
 #home-nav:hover {
+    text-decoration: underline;
+}
+#contact-nav {
+    color: var(--dark-blue);
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+#contact-nav:hover {
     text-decoration: underline;
 }
 
@@ -410,8 +425,8 @@ a:link {
 #footer-d {
     background-color: #BBB8D1;
     width: 50vw;
-    height: 5vh;
-    margin-top: 6vh; 
+    height: 7vh;
+    margin-top: 4vh; 
     margin-bottom: 5vh;
 }
 /* Homepage Mobile View CSS */
@@ -505,8 +520,8 @@ a:link {
 #footer-m {
     background-color: #BBB8D1;
     width: 28vw;
-    height: 4vh;
-    margin-top: 2vh; 
+    height: 6vh;
+    margin-top: 3vh; 
 }
 
 /* #Contact-page */
@@ -706,7 +721,7 @@ a:link {
 #footer-cm {
     background-color: #BBB8D1;
     width: 28vw;
-    height: 6vh;
+    height: 8vh;
     margin-top: 16vh;
 }
 
@@ -789,7 +804,7 @@ a:link {
     background-color: #BBB8D1;
     width: 50vw;
     height: 9vh;
-    margin-top: 0vh;
+    margin-top: 1vh;
 }
 /*article mobile template  */
 #mobile-container-article {
@@ -864,7 +879,7 @@ a:link {
     background-color: #BBB8D1;
     width: 28vw;
     height: 7vh;
-    margin-top: 0vh;
+    margin-top: -1vh;
 }
 
 
