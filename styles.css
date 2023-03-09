@@ -45,6 +45,9 @@ li {
 #home-nav:hover {
     text-decoration: underline;
 }
+#home-nav:visited {
+    color: var(--dark-blue);
+}
 #contact-nav {
     color: var(--dark-blue);
     font-size: 1.2rem;
@@ -52,6 +55,9 @@ li {
 }
 #contact-nav:hover {
     text-decoration: underline;
+}
+#contact-nav:visited {
+    color: var(--dark-blue);
 }
 
 body {
@@ -882,6 +888,48 @@ a:link {
     margin-top: -1vh;
 }
 
+/* contact form page */
+#contact-form {
+    text-align: center;
+}
+#name-label {
+    font-family: 'Caudex', serif;
+    color: var(--dark-blue);
+}
+#name-input {
+    font-family: 'Montserrat', sans-serif;
+    width: 15rem;
+    margin-top: 5rem;
+}
+#email-label {
+    font-family: 'Caudex', serif;
+    margin-top: 2rem;
+}
+#email-input {
+    font-family: 'Montserrat', sans-serif;
+    width:  15rem;
+    margin-top: 1rem;
+}
+#message-label {
+    font-family: 'Caudex', serif;
+    margin-top: 2rem;
+}
+#message-input {
+    font-family: 'Montserrat', sans-serif;
+    width: 19rem;
+    margin-top: 1rem;
+}
+#send-form-btn {
+    color: var(--dark-blue);
+    background-color: var(--pale-green);
+    font-family: 'Montserrat', sans-serif;
+    border-color: var(--dark-green);
+    margin-top: 1rem;
+}
+#send-form-btn:hover {
+    color: var(--off-white);
+    background-color: var(--dark-green);
+}
 
 #footer {
     background-color: var(--pale-green);
