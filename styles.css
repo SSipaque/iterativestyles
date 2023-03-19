@@ -889,8 +889,17 @@ a:link {
 }
 
 /* contact form page */
+#contact-text {
+    font-family: 'Caudex', serif;
+    color: var(--dark-blue);
+    font-size: 2.5em;
+    display: grid;
+    justify-content: center;
+    margin-top: 4rem;
+}
 #contact-form {
     text-align: center;
+    margin-bottom: 6rem;
 }
 #name-label {
     font-family: 'Caudex', serif;
@@ -899,7 +908,8 @@ a:link {
 #name-input {
     font-family: 'Montserrat', sans-serif;
     width: 15rem;
-    margin-top: 5rem;
+    min-height: 2rem;
+    margin-top: 4rem;
 }
 #email-label {
     font-family: 'Caudex', serif;
@@ -908,6 +918,7 @@ a:link {
 #email-input {
     font-family: 'Montserrat', sans-serif;
     width:  15rem;
+    min-height: 2rem;
     margin-top: 1rem;
 }
 #message-label {
@@ -917,6 +928,7 @@ a:link {
 #message-input {
     font-family: 'Montserrat', sans-serif;
     width: 19rem;
+    min-height: 3rem;
     margin-top: 1rem;
 }
 #send-form-btn {
