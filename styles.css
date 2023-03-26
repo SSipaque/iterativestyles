@@ -59,6 +59,17 @@ li {
 #contact-nav:visited {
     color: var(--dark-blue);
 }
+#about-nav {
+    color: var(--dark-blue);
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+#about-nav:hover {
+    text-decoration: underline;
+}
+#about-nav:visited {
+    color: var(--dark-blue);
+}
 
 body {
     background-color: var(--light-gray);
@@ -943,7 +954,24 @@ a:link {
     background-color: var(--dark-green);
 }
 
-#footer {
+#about-text {
+    text-align: center;
+    padding: 0 4rem 0 4rem;
+}
+h1 {
+    font-family: 'Caudex', serif;
+}
+.about-subheaders {
+    font-family: 'Caudex', serif;
+    text-align: left;
+}
+#why-iterativestyles-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    text-indent: 50px;
+}
+
+.footer {
     background-color: var(--pale-green);
     width: 100vw;
     height: 12vh;
