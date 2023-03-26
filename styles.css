@@ -955,6 +955,7 @@ a:link {
 }
 
 #about-text {
+    color: var(--dark-blue);
     text-align: center;
     padding: 0 4rem 0 4rem;
 }
@@ -964,11 +965,35 @@ h1 {
 .about-subheaders {
     font-family: 'Caudex', serif;
     text-align: left;
+    padding: 0 4rem 0 4rem;
 }
 #why-iterativestyles-text {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     text-indent: 50px;
+    max-width: 54rem;
+    padding: 0 4rem 0 4rem;
+}
+#target-audience-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    text-indent: 50px;
+    max-width: 54rem;
+    padding: 0 4rem 0 4rem;
+}
+#how-its-made-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    text-indent: 50px;
+    max-width: 54rem;
+    padding: 0 4rem 0 4rem;
+}
+#keep-in-mind-text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    text-indent: 50px;
+    max-width: 54rem;
+    padding: 0 4rem 0 4rem;
 }
 
 .footer {
@@ -994,4 +1019,24 @@ h1 {
 }
 #github-icon:hover {
     background-color: var(--light-gray);
+}
+
+/* for mobile view */
+@media only screen and (max-width: 768px) {
+    .about-subheaders {
+        /* background-color: #798276; */
+        padding: 0;
+    }
+    #why-iterativestyles-text {
+        padding: 0;
+    }
+    #target-audience-text {
+        padding: 0;
+    }
+    #how-its-made-text {
+        padding: 0;
+    }
+    #keep-in-mind-text {
+        padding: 0;
+    }
 }
