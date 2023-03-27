@@ -967,33 +967,15 @@ h1 {
     text-align: left;
     padding: 0 4rem 0 4rem;
 }
-#why-iterativestyles-text {
+.about-text {
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     text-indent: 50px;
     max-width: 54rem;
     padding: 0 4rem 0 4rem;
 }
-#target-audience-text {
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    text-indent: 50px;
-    max-width: 54rem;
-    padding: 0 4rem 0 4rem;
-}
-#how-its-made-text {
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    text-indent: 50px;
-    max-width: 54rem;
-    padding: 0 4rem 0 4rem;
-}
-#keep-in-mind-text {
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    text-indent: 50px;
-    max-width: 54rem;
-    padding: 0 4rem 0 4rem;
+#squarespace-site-link:hover {
+    text-decoration: underline;
 }
 
 .footer {
@@ -1027,16 +1009,7 @@ h1 {
         /* background-color: #798276; */
         padding: 0;
     }
-    #why-iterativestyles-text {
-        padding: 0;
-    }
-    #target-audience-text {
-        padding: 0;
-    }
-    #how-its-made-text {
-        padding: 0;
-    }
-    #keep-in-mind-text {
+    .about-text {
         padding: 0;
     }
 }
