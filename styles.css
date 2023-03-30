@@ -512,34 +512,39 @@ a:link {
     /* margin-top: -0.2vh;  */
     margin-top: 0.5rem;
 }
-/*  THIS IS WHERE I WAS UP TO IN CHANGING THE UNITS TO REM OR PX */
 #home-img-m {
     width: 15rem; 
     height: 15rem; 
-    margin-left: 5vw; 
-    margin-top: -3vh;
+    /* margin-left: 5vw;  */
+    /* margin-top: -3vh; */
+    margin: -1rem 0 0 5rem;
 }
 #figcaption-m {
     color: #798276;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.65em;
-    margin-left: 9vw;
-    margin-top: 0vh;
+    /* margin-left: 9vw; */
+    /* margin-top: 0vh; */
+    margin: 0 0 0 9rem;
 }
 #body-text01-m {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em; 
     /* line-height: 1.5em; */
     text-align: center;
-    margin-top: 0.5vh; 
+    /* margin-top: 0.5vh;  */
+    margin-top: 0.5rem;
 }
 #strip-m {
     background-color: #C6CACC;
     text-align: center;
-    width: 20vw;
-    height: 16vh;
+    /* width: 20vw; */
+    width: 18rem;
+    /* height: 16vh; */
+    height: 6.5rem;
     margin-top: -1vh;
-    padding: 0 4vw 0 4vw;
+    /* padding: 0 4vw 0 4vw; */
+    padding: 0 3.5rem 0 3.5rem;
 }
 /* .strip-title-m {
 
@@ -548,8 +553,9 @@ a:link {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em; 
     /* line-height: 1.5em; */
-    margin-top: -1vh;
-    margin-bottom: 0.2vh;
+    /* margin-top: -1vh; */
+    /* margin-bottom: 0.2vh; */
+    margin: -1rem 0 0.5rem 0;
 }
 #btn01-m {
     background-color: #292546;
@@ -565,10 +571,15 @@ a:link {
 }
 #footer-m {
     background-color: #BBB8D1;
-    width: 28vw;
-    height: 6vh;
-    margin-top: 3vh; 
+    /* width: 28vw; */
+    width: 25rem;
+    /* height: 6vh; */
+    height: 5rem;
+    /* margin-top: 3vh;  */
+    margin-top: 1rem;
 }
+
+/*  THIS IS WHERE I WAS UP TO IN CHANGING THE UNITS TO REM OR PX */
 
 /* #Contact-page */
 #contact-page-grid {
