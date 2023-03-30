@@ -94,7 +94,8 @@ a:link {
     border-width: 1px;
     border-color: var(--dark-blue);
     height: fit-content;
-    max-width: 90vw;
+    /* max-width: 90vw; */
+    max-width: 1300px; 
     padding: 0em 0em 1em 1em;
     margin: auto;
     margin-bottom: 2rem;
@@ -304,7 +305,8 @@ a:link {
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
     border: none;
-    max-width: 91.2vw;
+    /* max-width: 91.2vw; */
+    max-width: 1300px;
     margin: auto;
 }
 /* Style the buttons inside the tab */
@@ -336,7 +338,8 @@ a:link {
 /* Style the tab content */
 .tabcontent {
     background-color: var(--off-white);
-    max-width: 89.4vw;
+    /* max-width: 89.4vw; */
+    max-width: 1300px;
     padding: 6px 12px;
     border: 1px solid var(--dark-blue);
     border-top: 1px solid var(--dark-blue);
@@ -361,64 +364,80 @@ a:link {
 }
 #container-d{
     background-color: #EBEBEB;
-    width: 50vw;
-    height: 37vw;
+    /* width: 50vw; */
+    width: 50rem;
+    /* height: 37vw; */
+    height: 50rem;
 }
 #header-d {
     background-color: #BBB8D1;
-    width: 50vw;
-    height: 4vh;
+    /* width: 50vw; */
+    /* width: 720px; */
+    width: 45rem;
+    /* height: 4vh; */
+    height: 2rem;
 }
 #site-title-d {
     font-family: 'Caudex', serif;
-    margin-left: 3vw;
+    /* margin-left: 3vw; */
+    margin-left: 2rem;
     
 /* 			padding-bottom: 0.5rem; */
 }
 #nav-menu {
     font-family: "Caudex", serif;
     text-align: right;
-    margin-top: -4vh; 
+    /* margin-top: -4vh;  */
     margin-right: 3vw;
     margin-bottom: -5vh; 
+    margin: -2rem 2rem -4rem 0;
 /* 			padding: 0.5rem; */
 }
 .body-d {
-    width: 50vw;
+    /* width: 50vw; */
+    width: 45rem;
     height: fit-content;
 }
 #homepage-title-d {
     text-align: center;
     font-size: 1.5em;
-    margin-top: -0.2vh;
+    /* margin-top: -0.2vh; */
+    margin-top: 0.5rem;
 }
 #home-img-d {
     width: 15rem; 
     height: 15rem; 
-    margin-left: 3vw; 
-    margin-top: -1vh;
+    /* margin-left: 3vw;  */
+    /* margin-top: -1vh; */
+    margin: -1rem 0 0 2rem;
 }
 #figcaption-d {
     color: #798276;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.65em; 
-    margin-left: 8vw; 
-    margin-bottom: 1rem;
+    /* margin-left: 8vw;  */
+    /* margin-bottom: 1rem; */
+    margin: 0 0 1rem 6rem;
 }
 #body-text01 {
     font-family: 'Montserrat', sans-serif;
     font-size: .9em; 
     /* line-height: 1.5em; */
-    margin-top: -23vh;
-    margin-left: 24vw;
+    /* margin-top: -23vh; */
+    /* margin-left: 24vw; */
+    margin: -10rem 0 0 20rem;
 }
 #strip-d {
     background-color: #C6CACC;
     text-align: center;
-    width: 42vw;
-    height: 16.5vh;
-    margin-top: 16vh;
-    padding: 0 4vw 0 4vw;
+    /* width: 42vw; */
+    width: 38rem;
+    /* height: 16.5vh; */
+    height: 7rem;
+    /* margin-top: 16vh; */
+    margin-top: 7rem;
+    /* padding: 0 4vw 0 4vw; */
+    padding: 0 3.5rem 0 3.5rem;
 }
 #strip-title {
     font-family: 'Caudex', serif;
@@ -441,8 +460,9 @@ a:link {
 }
 #footer-d {
     background-color: #BBB8D1;
-    width: 50vw;
-    height: 7vh;
+    /* width: 50vw; */
+    width: 45rem;
+    height: 7.5vh;
     margin-top: 4vh; 
     margin-bottom: 5vh;
 }
@@ -457,33 +477,42 @@ a:link {
 }
 #container-m{
     background-color: #EBEBEB;
-    width: 28vw;
+    /* width: 28vw; */
+    width: 400px;
     /* height: 35.2rem; */
-    height: 37vw;
+    /* height: 37vw; */
+    height: 35rem;
 }
 #header-m {
     background-color: #BBB8D1;
-    width: 28vw;
-    height: 4vh;
+    /* width: 28vw; */
+    width: 25rem;
+    /* height: 4vh; */
+    height: 2rem;
 }
 #site-title-m {
-    margin-left: 3vw;
+    /* margin-left: 3vw; */
+    margin-left: 2rem;
 }
 #nav-menu-m {
     font-family: "Caudex", serif;
     text-align: right;
-    margin-top: -4.5vh; 
-    margin-right: 3vw;
+    /* margin-top: -4.5vh;  */
+    /* margin-right: 3vw; */
+    margin: -2rem 2rem 0 0;
 }
 .body-m {
-    width: 28vw;
+    /* width: 28vw; */
+    width: 25rem;
     height: fit-content;
 }
 #homepage-title-m {
     text-align: center;
     font-size: 1.5em; 
-    margin-top: -0.2vh; /* originally -0.2vh*/
+    /* margin-top: -0.2vh;  */
+    margin-top: 0.5rem;
 }
+/*  THIS IS WHERE I WAS UP TO IN CHANGING THE UNITS TO REM OR PX */
 #home-img-m {
     width: 15rem; 
     height: 15rem; 
@@ -557,7 +586,8 @@ a:link {
 }
 #container-cd{
     background-color: #EBEBEB;
-    width: 50vw;
+    /* width: 50vw; */
+    width: 750px;
     height: 39vw;
 }
 #header-cd {
@@ -652,7 +682,8 @@ a:link {
 }
 #container-cm{
     background-color: #EBEBEB;
-    width: 28vw;
+    /* width: 28vw; */
+    width: 400px;
     height: 39vw;
 }
 #header-cm {
@@ -759,7 +790,8 @@ a:link {
 }
 #container-ad{
     background-color: #EBEBEB;
-    width: 50vw;
+    /* width: 50vw; */
+    width: 750px;
     height: 39vw;
 }
 #header-ad {
@@ -834,7 +866,8 @@ a:link {
 }
 #container-am{
     background-color: #EBEBEB;
-    width: 28vw;
+    /* width: 28vw; */
+    width: 400px;
     height: 39vw;
 }
 #header-am {
@@ -963,6 +996,7 @@ h1 {
     font-family: 'Caudex', serif;
 }
 .about-subheaders {
+    color: var(--dark-blue);
     /* background-color: var(--pale-purple); */
     font-family: 'Caudex', serif;
     text-align: left;
@@ -970,6 +1004,7 @@ h1 {
     padding: 0 4rem 0 4rem;
 }
 .about-text {
+    color: var(--dark-blue);
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     text-indent: 50px;
