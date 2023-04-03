@@ -1053,6 +1053,44 @@ h1 {
 
 /* for mobile view */
 @media only screen and (max-width: 768px) {
+    .colors {
+        grid-column: 1/auto;
+        grid-row: 1/auto;
+        height: 15rem;
+    }  
+    #color3 {
+        grid-column: 3/auto;
+        grid-row: 1/auto;
+        margin-top: 2rem;
+    }
+    #color4 {
+        grid-column: 1/auto;
+        grid-row: 2/auto;
+        margin-top: 2rem;
+    }
+    #color5 {
+        grid-column: 2/auto;
+        grid-row: 2/auto;
+        margin-top: 2rem;
+    }
+    #color6 {
+        grid-column: 3/auto;
+        grid-row: 2/auto;
+        margin-top: 2rem;
+    }
+    #font1 {
+        font-family:'Caudex', serif;
+        grid-column: 1/auto;
+        grid-row: 2/auto;
+    }
+    #font2 {
+        font-family: 'Montserrat', sans-serif;
+        grid-column: 1/auto;
+        grid-row: 3/auto;
+        padding: 0 1rem 0 0rem;
+    }   
+
+
     .about-subheaders {
         /* background-color: #798276; */
         padding: 0;
