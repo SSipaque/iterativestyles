@@ -1169,21 +1169,51 @@ h1 {
 @media only screen and (max-width: 480px) {
     #color1value {
         display: block;
+        width: 4rem;
+        height: 4rem;
+        margin: 1rem auto;
+        position: relative;
+        padding: 0px; 
     }   
     #color2value {
         display: block;
+        width: 4rem;
+        height: 4rem;
+        margin: 1rem auto;
+        position: relative;
+        padding: 0px;
     }  
     #color3value {
         display: block;
+        width: 4rem;
+        height: 4rem;
+        margin: 1rem auto;
+        position: relative;
+        padding: 0px;
     }  
     #color4value {
         display: block;
+        width: 4rem;
+        height: 4rem;
+        margin: 1rem auto;
+        position: relative;
+        padding: 0px;
     }   
     #color5value {
         display: block;
+        width: 4rem;
+        height: 4rem;
+        margin: 1rem auto;
+        position: relative;
+        padding: 0px;
     }  
     #color6value {
         display: block;
+        width: 4rem;
+        height: 4rem;
+        margin: 1rem auto;
+        position: relative;
+        padding: 0px;
     }  
 
     #desktop-container-homepage {

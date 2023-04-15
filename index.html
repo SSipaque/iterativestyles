@@ -25,27 +25,27 @@
     <h3 id="short-info">Try different color and font combinations to find out what works best for you!</h3>
 	<div class="editor">
 		<div class="colors">
-			<div id="color1" onclick="toggleDisplay1();">
+			<div id="color1" onclick="toggleDisplay1(screen);">
 				<input type="color" id="color1value"
            value="#EBEBEB">
 			</div>
-			<div id="color2" onclick="toggleDisplay2();">
+			<div id="color2" onclick="toggleDisplay2(screen);">
 				<input type="color" id="color2value"
            value="#C6CACC">
 			</div>
-			<div id="color3" onclick="toggleDisplay3();">
+			<div id="color3" onclick="toggleDisplay3(screen);">
 				<input type="color" id="color3value"
            value="#BBB8D1">
 			</div>
-			<div id="color4" onclick="toggleDisplay4();">
+			<div id="color4" onclick="toggleDisplay4(screen);">
 				<input type="color" id="color4value"
            value="#798276">
 			</div>
-			<div id="color5" onclick="toggleDisplay5();">
+			<div id="color5" onclick="toggleDisplay5(screen);">
 				<input type="color" id="color5value"
            value="#B0BAAD">
 			</div>
-			<div id="color6" onclick="toggleDisplay6();">
+			<div id="color6" onclick="toggleDisplay6(screen);">
 				<input type="color" id="color6value"
            value="#292546">
 			</div>
@@ -263,70 +263,98 @@
 		var c4v= document.getElementById("color4value");
 		var c5v= document.getElementById("color5value");
 		var c6v= document.getElementById("color6value");
-		function toggleDisplay1(){
-// 			var c1v= document.getElementById("color1value");
-			if (c1v.style.display === "block") {
-// 				setTimeout(function() {
-// 				  c1v.style.display = "none";
-// 				}, 5000);
-				c1v.style.display = "none";
-		  	} else {
-				c1v.style.display = "block";
-		 	 
-// 		 	 console.log(c1v.style.display);
-			}
+		var screen = window.matchMedia("(max-width: 700px)");
+
+		function toggleDisplay1(screen){
+			if (screen.matches) { // If media query matches
+				c1v.style.display = "block"; //on mobile ONLY make sure input is visible always
+			} else {
+				if (c1v.style.display === "block") { //otherwise let it be toggled by onclick to appear and disappear
+					c1v.style.display = "none";
+				} else {
+					c1v.style.display = "block";
+				}
 			}
 			const c1 = document.getElementById("color1");
 			c1v.addEventListener("input", updateColor);
+			screen.addListener(toggleDisplay1); //event listener for screen variable
 
-		function toggleDisplay2() {
-			if (c2v.style.display === "block") {
-				c2v.style.display = "none";
-		  	} else {
-				c2v.style.display = "block";
-			};
+			}
+		function toggleDisplay2(screen) {
+			if (screen.matches) { // If media query matches
+				c2v.style.display = "block"; //on mobile ONLY make sure input is visible always
+			} else {
+				if (c2v.style.display === "block") { //otherwise let it be toggled by onclick to appear and disappear
+					c2v.style.display = "none";
+				} else {
+					c2v.style.display = "block";
+				}
+			}
+			// console.log(c2v.style.display);
 			const c2 = document.getElementById("color2");
 			c2v.addEventListener("input", updateColor2);
+			screen.addListener(toggleDisplay2); //event listener for screen variable
 		}
-		function toggleDisplay3() {
-			if (c3v.style.display === "block") {
-				c3v.style.display = "none";
-		  	} else {
-				c3v.style.display = "block";
-			};
+		function toggleDisplay3(screen) {
+			if (screen.matches) { // If media query matches
+				c3v.style.display = "block"; //on mobile ONLY make sure input is visible always
+			} else {
+				if (c3v.style.display === "block") { //otherwise let it be toggled by onclick to appear and disappear
+					c3v.style.display = "none";
+				} else {
+					c3v.style.display = "block";
+				}
+			}
 			const c3 = document.getElementById("color3");
 			c3v.addEventListener("input", updateColor3);
+			screen.addListener(toggleDisplay3);
 		}
-		function toggleDisplay4() {
-			if (c4v.style.display === "block") {
-				c4v.style.display = "none";
-		  	} else {
-				c4v.style.display = "block";
-			};
+		function toggleDisplay4(screen) {
+			if (screen.matches) { // If media query matches
+				c4v.style.display = "block"; //on mobile ONLY make sure input is visible always
+			} else {
+				if (c4v.style.display === "block") { //otherwise let it be toggled by onclick to appear and disappear
+					c4v.style.display = "none";
+				} else {
+					c4v.style.display = "block";
+				}
+			}
 			const c4 = document.getElementById("color4");
 			c4v.addEventListener("input", updateColor4);
+			screen.addListener(toggleDisplay4);
 		}
-		function toggleDisplay5() {
-			if (c5v.style.display === "block") {
-				c5v.style.display = "none";
-		  	} else {
-				c5v.style.display = "block";
-			};
+		function toggleDisplay5(screen) {
+			if (screen.matches) { // If media query matches
+				c5v.style.display = "block"; //on mobile ONLY make sure input is visible always
+			} else {
+				if (c5v.style.display === "block") { //otherwise let it be toggled by onclick to appear and disappear
+					c5v.style.display = "none";
+				} else {
+					c5v.style.display = "block";
+				}
+			}
 			const c5 = document.getElementById("color5");
 			c5v.addEventListener("input", updateColor5);
+			screen.addEventListener(toggleDisplay5);
 		}
-		function toggleDisplay6() {
-			if (c6v.style.display === "block") {
-				c6v.style.display = "none";
-		  	} else {
-				c6v.style.display = "block";
-			};
+		function toggleDisplay6(screen) {
+			if (screen.matches) { // If media query matches
+				c6v.style.display = "block"; //on mobile ONLY make sure input is visible always
+			} else {
+				if (c6v.style.display === "block") { //otherwise let it be toggled by onclick to appear and disappear
+					c6v.style.display = "none";
+				} else {
+					c6v.style.display = "block";
+				}
+			}
 			const c6 = document.getElementById("color6");
 			c6v.addEventListener("input", updateColor6);
+			screen.addEventListener(toggleDisplay6);
 		}
 
 
 		function updateColor(){
+			const c1 = document.getElementById("color1");
 			c1.style.backgroundColor = document.getElementById("color1value").value;
 			document.getElementById("container-d").style.backgroundColor = document.getElementById("color1value").value;
 			document.getElementById("container-m").style.backgroundColor = document.getElementById("color1value").value;
@@ -563,7 +591,7 @@
 		// artcile mobile
 		document.getElementById("article-figcaption-m").style.fontFamily = font.value;
 		document.getElementById("body-text01-am").style.fontFamily = font.value;
-		}  
+		}
 
 	</script>
 </body>
