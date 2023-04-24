@@ -90,7 +90,6 @@
     </div>
 <!-- This is where the tabs start -->
     <div class="tab">
-    <!-- The code for each template needs to be added -->
 		<button class="tablinks" onclick="openTemplate(event, 'Homepage')" id="defaultOpen">Homepage</button>
 		<button class="tablinks" onclick="openTemplate(event, 'Contact_page')" >Contact</button>
 		<button class="tablinks" onclick="openTemplate(event, 'Article')" >Article</button>
@@ -483,7 +482,6 @@
 
 
 		var infont1= document.getElementById("input-font1");
-		// setTimeout(function(){toggleDisplayFont1();}, 5000);
 		function toggleDisplayFont1() {
 			if (infont1.style.display === "block") {
 				infont1.style.display = "none";
@@ -494,11 +492,6 @@
 		
 		var changeFontStyle1 = function (font) {
             document.getElementById("font1").style.fontFamily = font.value;
-			// changeFontStyle1Templates();
-			// for some reason this stops the changeFontText1 function from working so 
-			// template text change must be done separately
-			// document.getElementById("site-title-d").style.fontFamily = font.value;
-			// document.getElementById("homepage-title-d").style.fontFamily = font.value;
         }
 		var changeFontText1 = function() {
 			const input1 = document.getElementById("input-font1");
