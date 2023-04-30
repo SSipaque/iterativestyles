@@ -86,7 +86,7 @@
 			<h5 id="h5f2">The quick brown fox jumps over a lazy dog.</h5>
 			<p id="smallest-font2">The five boxing wizards jump quickly</p>
 		</div>
-		
+		<button id="reset-btn" onclick="deleteItems();">Reset</button>
     </div>
 <!-- This is where the tabs start -->
     <div class="tab">
@@ -473,7 +473,6 @@
 		function updateColor6(){
 			const c6 = document.getElementById("color6");
 			c6.style.backgroundColor = document.getElementById("color6value").value;
-			//This part below does not work properly at the moment
 			document.getElementById("btn01").style.backgroundColor = document.getElementById("color6value").value;
 			document.getElementById("btn01-m").style.backgroundColor = document.getElementById("color6value").value;
 			document.getElementById("submit-btn-cd").style.backgroundColor = document.getElementById("color6value").value;
@@ -585,6 +584,23 @@
 		document.getElementById("article-figcaption-m").style.fontFamily = font.value;
 		document.getElementById("body-text01-am").style.fontFamily = font.value;
 		}
+
+		// LocalStorage
+		// test for localStorage
+			// Set Item
+			localStorage.setItem("lastname", "Johnson");
+			// Retrieve
+			document.getElementById("h3f1").innerHTML = localStorage.getItem("lastname");
+			function deleteItems(){
+				// clear localStorage 
+				localStorage.removeItem("lastname");
+				// Retrieve
+				document.getElementById("h3f1").innerHTML = localStorage.getItem("lastname");
+				// reset with old text
+				document.getElementById("h3f1").innerHTML = "How quickly daft jumping zebras vex.";
+			}
+		// const c1 = document.getElementById("color1");
+		// 	c1.style.backgroundColor = document.getElementById("color1value").value;
 
 	</script>
 </body>

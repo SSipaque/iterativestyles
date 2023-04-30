@@ -96,7 +96,7 @@ a:link {
     height: fit-content;
     /* max-width: 90vw; */
     max-width: 1300px; 
-    padding: 0em 0em 1em 1em;
+    padding: 0rem 0rem 1rem 1rem;
     margin: auto;
     margin-bottom: 2rem;
     column-gap: 1rem;
@@ -115,18 +115,18 @@ a:link {
 }
 #color1{
     background-color: var(--light-gray);
-    width: 6em;
-    height: 6em;
+    width: 6rem;
+    height: 6rem;
     /* margin-left: -13em; */
     /* margin-left: -9.5em; */
-    margin-top: 2em;
+    margin-top: 2rem;
     border-radius: 50%;
     grid-column: 1/2;
     grid-row: 1/auto;
 }
 #color1:hover {
-    width: 7em;
-    height: 7em;
+    width: 7rem;
+    height: 7rem;
     cursor: pointer;
 }
 #color1value {
@@ -138,17 +138,17 @@ a:link {
 }
 #color2{
     background-color: var(--mid-gray);
-    width: 6em;
-    height: 6em;
+    width: 6rem;
+    height: 6rem;
     /* margin-left: -7em; */
-    margin-top: 2em;
+    margin-top: 2rem;
     border-radius: 50%;
     grid-column: 2/auto;
     grid-row: 1/auto;
 }
 #color2:hover {
-    width: 7em;
-    height: 7em;
+    width: 7rem;
+    height: 7rem;
     cursor: pointer;
 }
 #color2value {
@@ -159,17 +159,17 @@ a:link {
 }
 #color3{
     background-color: var(--pale-purple);
-    width: 6em;
-    height: 6em;
+    width: 6rem;
+    height: 6rem;
     /* margin-left: -13em; */
-    margin-top: 10.5em;
+    margin-top: 10.5rem;
     border-radius: 50%;
     grid-column: 1/auto;
     grid-row: 1/auto;
 }
 #color3:hover {
-    width: 7em;
-    height: 7em;
+    width: 7rem;
+    height: 7rem;
     cursor: pointer;
 }
 #color3value {
@@ -180,17 +180,17 @@ a:link {
 }
 #color4{
     background-color: var(--dark-green);
-    width: 6em;
-    height: 6em;
+    width: 6rem;
+    height: 6rem;
     /* margin-left: -7em; */
-    margin-top: 10.5em;
+    margin-top: 10.5rem;
     border-radius: 50%;
     grid-column: 2/auto;
     grid-row: 1/auto;
 }
 #color4:hover {
-    width: 7em;
-    height: 7em;
+    width: 7rem;
+    height: 7rem;
     cursor: pointer;
 }
 #color4value {
@@ -201,17 +201,17 @@ a:link {
 }
 #color5{
     background-color: var(--pale-green);
-    width: 6em;
-    height: 6em;
+    width: 6rem;
+    height: 6rem;
     /* margin-left: -13em; */
-    margin-top: 19em;
+    margin-top: 19rem;
     border-radius: 50%;
     grid-column: 1/auto;
     grid-row: 1/auto;
 }
 #color5:hover {
-    width: 7em;
-    height: 7em;
+    width: 7rem;
+    height: 7rem;
     cursor: pointer;
 }
 #color5value {
@@ -222,17 +222,17 @@ a:link {
 }
 #color6{
     background-color: var(--dark-blue);
-    width: 6em;
-    height: 6em;
+    width: 6rem;
+    height: 6rem;
     /* margin-left: -7em; */
-    margin-top: 19em;
+    margin-top: 19rem;
     border-radius: 50%;
     grid-column: 2/auto;
     grid-row: 1/auto;
 }
 #color6:hover {
-    width: 7em;
-    height: 7em;
+    width: 7rem;
+    height: 7rem;
     cursor: pointer;
 }
 #color6value {
@@ -296,6 +296,15 @@ a:link {
     display: none; 
     position: absolute;
     margin-top: 2rem;
+}
+#reset-btn {
+    width: 4rem;
+    height: 2rem;
+    margin: -2rem 1rem 0 0 ;
+    border-radius: 5px;
+    grid-column: 5/auto;
+    grid-row: 4/auto;
+    /* justify-self: flex-end; */
 }
 
 /* Tab styling */
@@ -1114,7 +1123,7 @@ h1 {
 }
 
 /* for tablet/mobile view */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) { /* was 768*/
     .colors {
         grid-column: 1/auto;
         grid-row: 1/auto;
@@ -1151,6 +1160,15 @@ h1 {
         grid-row: 3/auto;
         padding: 0 1rem 0 0rem;
     }   
+    #reset-btn {
+        width: 4rem;
+        height: 2rem;
+        margin: 1rem 1rem 0 0 ;
+        border-radius: 5px;
+        grid-column: 1/auto;
+        grid-row: 5/auto;
+        justify-self: flex-end;
+    }
 
 
     .about-subheaders {
@@ -1215,6 +1233,15 @@ h1 {
         position: relative;
         padding: 0px;
     }  
+    #reset-btn {
+        width: 4rem;
+        height: 2rem;
+        margin: 1rem 1rem 0 0 ;
+        border-radius: 5px;
+        grid-column: 1/auto;
+        grid-row: 5/auto;
+        justify-self: flex-end;
+    }
 
     #desktop-container-homepage {
         grid-column: 2/auto;
