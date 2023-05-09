@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <a href="/index.html"><h1 id="site-title">IterativeStyles</h1></a>
+    <a href="/index.html"><h1 class="h1" id="site-title">IterativeStyles</h1></a>
 	<nav>
 		<ul>
 			<li><a id="home-nav" href="/index.html">Home</a></li>
@@ -25,28 +25,28 @@
     <h3 id="short-info">Try different color and font combinations to find out what works best for you!</h3>
 	<div class="editor">
 		<div class="colors">
-			<div id="color1" onclick="toggleDisplay1(screen);">
-				<input type="color" id="color1value"
+			<div id="color1" onclick="toggleDisplay1(screen); console.log(console);">
+				<input type="color" id="color1value" onchange="setColor();"
            value="#EBEBEB">
 			</div>
 			<div id="color2" onclick="toggleDisplay2(screen);">
-				<input type="color" id="color2value"
+				<input type="color" id="color2value" onchange="setColor2();"
            value="#C6CACC">
 			</div>
 			<div id="color3" onclick="toggleDisplay3(screen);">
-				<input type="color" id="color3value"
+				<input type="color" id="color3value" onchange="setColor3();"
            value="#BBB8D1">
 			</div>
 			<div id="color4" onclick="toggleDisplay4(screen);">
-				<input type="color" id="color4value"
+				<input type="color" id="color4value" onchange="setColor4();"
            value="#798276">
 			</div>
 			<div id="color5" onclick="toggleDisplay5(screen);">
-				<input type="color" id="color5value"
+				<input type="color" id="color5value" onchange="setColor5();"
            value="#B0BAAD">
 			</div>
 			<div id="color6" onclick="toggleDisplay6(screen);">
-				<input type="color" id="color6value"
+				<input type="color" id="color6value" onchange="setColor6();"
            value="#292546">
 			</div>
 		</div>
@@ -500,6 +500,7 @@
 
 		// To change fontstyle of templates according to Font1 changes 
 		var changeFontStyle1Templates = function(font) {
+		document.getElementById("font1").style.fontFamily = font.value;
 		// homepage desktop
 		document.getElementById("site-title-d").style.fontFamily = font.value;
 		document.getElementById("nav-menu").style.fontFamily = font.value;
@@ -584,7 +585,7 @@
 		// artcile mobile
 		document.getElementById("article-figcaption-m").style.fontFamily = font.value;
 		document.getElementById("body-text01-am").style.fontFamily = font.value;
-		}
+		}  
 	</script>
 </body>
 </html>

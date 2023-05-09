@@ -298,9 +298,13 @@ a:link {
     margin-top: 2rem;
 }
 #reset-btn {
+    color: var(--dark-blue);
+    background-color: var(--light-gray);
+    font-family:'Caudex', serif;
     width: 4rem;
     height: 2rem;
     margin: -2rem 1rem 0 0 ;
+    border-color: var(--dark-green);
     border-radius: 5px;
     grid-column: 5/auto;
     grid-row: 4/auto;
@@ -456,7 +460,7 @@ a:link {
 }
 #btn01 {
     background-color: #292546;
-    color: #F8FDFF;
+    color: var(--off-white); 
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9em; 
     border-radius: 16px;
@@ -1072,7 +1076,7 @@ a:link {
     text-align: center;
     padding: 0 20vw 0 20vw;
 }
-h1 {
+.h1 {
     font-family: 'Caudex', serif;
 }
 .about-subheaders {
