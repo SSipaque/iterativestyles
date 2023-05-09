@@ -151,12 +151,12 @@ window.addEventListener('load', (event) => {
     document.getElementById("name-cd").style.color = "var(--dark-blue)";
     document.getElementById("email-cd").style.color = "var(--dark-blue)";
     document.getElementById("subject-cd").style.color = "var(--dark-blue)";
-    document.getElementById("submit-btn-cd").style.color = "var(--dark-blue)";
+    document.getElementById("submit-btn-cd").style.color = "--off-white";
     // contact mobile
     document.getElementById("name-cm").style.color = "var(--dark-blue)";
     document.getElementById("email-cm").style.color = "var(--dark-blue)";
     document.getElementById("subject-cm").style.color = "var(--dark-blue)";
-    document.getElementById("submit-btn-cm").style.color = "var(--dark-blue)";
+    document.getElementById("submit-btn-cm").style.color = "--off-white";
 
     // article desktop
     document.getElementById("article-figcaption").style.color = "var(--dark-blue)";
